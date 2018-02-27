@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.projetocpv.example.mateus2314.projetotcc_calculopv.Main2Activity_dados_inversor"
+    android:fillViewport="true">
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_blue_dark">
+
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="40dp"
+            android:text="@string/titulo_txt_inv"
+            android:textColor="@android:color/background_light"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView5"
+            android:layout_marginTop="13dp"
+            android:text="@string/Md_txt_inv"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/idModInver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView6"
+            android:layout_alignBottom="@+id/textView6"
+            android:layout_alignParentEnd="true"
+            android:layout_toEndOf="@+id/textView6"
+            android:background="@android:color/background_light"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:labelFor="@+id/idModInver"
+            />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView6"
+            android:layout_marginTop="14dp"
+            android:text="@string/pot_txt_nom"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/id_pot_nominal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView7"
+            android:layout_alignBottom="@+id/textView7"
+            android:layout_toEndOf="@+id/textView7"
+            android:background="@android:color/background_light"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:labelFor="@+id/id_pot_nominal"/>
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView7"
+            android:layout_marginTop="12dp"
+            android:text="@string/num_txt_mppt_trac"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/idnumTracMPPT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView8"
+            android:layout_alignBottom="@+id/textView8"
+            android:layout_toEndOf="@+id/textView8"
+            android:background="@android:color/background_light"
+            android:ems="10"
+            android:inputType="number"
+            android:labelFor="@+id/idnumTracMPPT" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView8"
+            android:layout_marginTop="13dp"
+            android:text="@string/txt_menor_mppt"
+            android:textSize="18sp"
+
+            />
+
+        <EditText
+            android:id="@+id/idmenor_mppt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/textView9"
+            android:layout_toEndOf="@+id/textView9"
+            android:background="@android:color/background_light"
+            android:ems="10"
+            android:inputType="textPersonName|numberDecimal"
+            android:labelFor="@+id/idmenor_mppt"
+            />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView9"
+            android:layout_marginTop="11dp"
+            android:text="@string/maior_mppt_txt"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/idmaiorVMPPT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView10"
+            android:layout_alignBottom="@+id/textView10"
+            android:layout_toEndOf="@+id/textView10"
+            android:background="@android:color/background_light"
+            android:ems="10"
+            android:inputType="textPersonName|numberDecimal"
+            android:labelFor="@+id/idmaiorVMPPT"
+            />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView10"
+            android:layout_marginTop="13dp"
+            android:text="@string/Coe_txt_MPPT"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/id_coefi_MPPT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView11"
+            android:layout_alignBottom="@+id/textView11"
+            android:layout_toEndOf="@+id/textView11"
+            android:background="@android:color/background_light"
+            android:ems="10"
+            android:inputType="number"
+            android:labelFor="@+id/id_coefi_MPPT"
+            />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView11"
+            android:layout_marginTop="12dp"
+            android:text="@string/fator_txt_pot"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/Id_fator_pot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView12"
+            android:layout_alignBottom="@+id/textView12"
+            android:layout_toEndOf="@+id/textView12"
+            android:background="@android:color/background_light"
+            android:ems="10"
+            android:inputType="number"
+            android:labelFor="@+id/Id_fator_pot"/>
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView12"
+            android:layout_marginTop="15dp"
+            android:text="@string/THD_txt"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/id_THD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView13"
+            android:layout_alignBottom="@+id/textView13"
+            android:layout_toEndOf="@+id/textView13"
+            android:background="@android:color/background_light"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:labelFor="@+id/id_THD"/>
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView13"
+            android:layout_marginTop="17dp"
+            android:text="@string/v_cc_txt"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/idVmaxcc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView14"
+            android:layout_alignBottom="@+id/textView14"
+            android:layout_toEndOf="@+id/textView14"
+            android:background="@android:color/background_light"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:labelFor="@+id/idVmaxcc"
+            />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView14"
+            android:layout_marginTop="13dp"
+            android:text="@string/corre_txt_max_string"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/IdcorrenteMaxStr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView15"
+            android:layout_alignBottom="@+id/textView15"
+            android:layout_toEndOf="@+id/textView15"
+            android:background="@android:color/background_light"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:labelFor="@+id/IdcorrenteMaxStr"/>
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView15"
+            android:layout_marginTop="13dp"
+            android:text="@string/frequencia_txt_rede"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/idFreqRede"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView16"
+            android:layout_toEndOf="@+id/textView16"
+            android:background="@android:color/background_light"
+            android:ems="10"
+            android:inputType="number"
+            android:labelFor="@+id/idFreqRede" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/idFreqRede"
+            android:layout_toEndOf="@+id/textView15"
+            android:text="@string/seguir_txt_2" />
+
+        <Button
+            android:id="@+id/idvoltar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView16"
+            android:layout_marginStart="24dp"
+            android:text="@string/voltar_txt_act1" />
+
+    </RelativeLayout>
+</ScrollView>

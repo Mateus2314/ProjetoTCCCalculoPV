@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Projeto TCC - Calculo PV</string>
+    <string name="titulo_open_txt">Projeto Calculadora Solar</string>
+    <string name="nome_txt_open">Digite o seu nome completo!</string>
+    <string name="txt_preco">Digite o valor da sua conta de energia mensal.</string>
+    <string name="txt_obs_open">obs: Coloque o valor em reais</string>
+    <string name="txt_open_padrao_entrada">Qual o tipo do padrão de entrada da sua casa?</string>
+    <string name="txt_padrao_entrada_mono">Monofásico</string>
+    <string name="txt_padrao_entrada_tri">Trifásico</string>
+    <string name="botao_open_txt">Seguir</string>
+    <string name="titulo_txt_inv">Informações do Inversor</string>
+    <string name="Md_txt_inv">Modelo do Inverso:</string>
+    <string name="pot_txt_nom">Potência nominal (kW):</string>
+    <string name="num_txt_mppt_trac">Número de trackers de MPPT:</string>
+    <string name="txt_menor_mppt">Menor tensão de MPPT (V):</string>
+    <string name="maior_mppt_txt">Maior tensão de MPPT (V):</string>
+    <string name="Coe_txt_MPPT">Coeficiente de MPPT (%):</string>
+    <string name="fator_txt_pot">Fator de potência (%):</string>
+    <string name="THD_txt">THD (%):</string>
+    <string name="v_cc_txt">Tensão máxima cc (V):</string>
+    <string name="corre_txt_max_string">Corrente maximo por String (A):</string>
+    <string name="frequencia_txt_rede">Frequencia da rede (Hz):</string>
+    <string name="seguir_txt_2">Seguir</string>
+    <string name="voltar_txt_act1">Voltar</string>
+    />
+</resources>

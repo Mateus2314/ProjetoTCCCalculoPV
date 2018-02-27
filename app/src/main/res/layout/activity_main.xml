@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.projetocpv.example.mateus2314.projetotcc_calculopv.MainActivity"
+    android:fillViewport="true">
+<RelativeLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/holo_blue_dark">
+
+    <ImageView
+        android:id="@+id/imageView3"
+
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/editTxtNome"
+        android:layout_marginStart="12dp"
+        app:srcCompat="@android:drawable/ic_menu_myplaces"
+        android:contentDescription="@string/app_name"/>
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/editText4"
+        android:fontFamily="monospace"
+        android:text="@string/titulo_open_txt"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        android:textSize="30sp"
+        tools:ignore="UnknownId" />
+
+    <EditText
+        android:id="@+id/editTxtNome"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/titulo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="27dp"
+        android:background="@android:color/background_light"
+        android:contentDescription="@string/nome_txt_open"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:singleLine="false"
+        android:visibility="visible"
+        android:labelFor="@+id/editTxtNome"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/editTxtNome"
+        android:layout_marginStart="12dp"
+        app:srcCompat="@android:drawable/ic_menu_myplaces"
+        android:contentDescription="@string/nome_txt_open"/>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/editTxtNome"
+        android:layout_marginStart="12dp"
+        app:srcCompat="@android:drawable/ic_menu_myplaces"
+        android:contentDescription="@string/app_name"/>
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignStart="@+id/imageView3"
+        android:layout_below="@+id/imageView3"
+        android:layout_marginTop="29dp"
+        app:srcCompat="@android:drawable/ic_menu_save"
+        android:contentDescription="@string/txt_open_padrao_entrada"/>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/radioGroupidentrada"
+        android:layout_alignStart="@+id/imageView4"
+        android:layout_marginBottom="14dp"
+        android:text="@string/txt_open_padrao_entrada"
+        android:textSize="18sp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupidentrada"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="89dp"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/radioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/txt_padrao_entrada_mono" />
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/txt_padrao_entrada_tri" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/botaoseguir1id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="38dp"
+        android:layout_alignEnd="@+id/action_bar"
+        android:text="@string/botao_open_txt"
+        tools:ignore="UnknownId" />
+
+    <EditText
+        android:id="@+id/EditTxtContaLuz"
+        android:layout_width="300dp"
+        android:layout_height="50sp"
+        android:layout_alignStart="@+id/editTxtNome"
+        android:layout_alignTop="@+id/imageView4"
+        android:background="@android:color/background_light"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:textSize="14sp"
+        android:labelFor="@+id/EditTxtContaLuz"/>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/EditTxtContaLuz"
+        android:layout_below="@+id/EditTxtContaLuz"
+        android:text="@string/txt_obs_open"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Notification"
+        android:textColor="@color/colorAccent"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/imageView3"
+        android:layout_alignStart="@+id/editTxtNome"
+        android:text="@string/nome_txt_open" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/EditTxtContaLuz"
+        android:layout_alignStart="@+id/EditTxtContaLuz"
+        android:text="@string/txt_preco" />
+
+</RelativeLayout>
+    </ScrollView>
