@@ -30,10 +30,10 @@ public class Main2Activity_dados_inversor extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2_dados_inversor);
 
-        Bundle extra = getIntent().getExtras();
-        if(extra != null){
-            String padraoEntrada2 = extra.getString("tipo_entrada");
-        }
+        //Bundle extra = getIntent().getExtras();
+       // if(extra != null){
+       //     String padraoEntrada2 = extra.getString("tipo_entrada");
+       // }
 
         modeloInversor = (EditText) findViewById(R.id.idModInver);
         potnomInv = (EditText) findViewById(R.id.id_pot_nominal);

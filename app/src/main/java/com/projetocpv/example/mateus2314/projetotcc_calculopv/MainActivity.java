@@ -10,6 +10,8 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Toast;
 
+import com.github.rtoshiro.util.format.SimpleMaskFormatter;
+
 public class MainActivity extends AppCompatActivity {
 
     private RadioGroup radioGroupPadraoEntra;
@@ -28,9 +30,12 @@ public class MainActivity extends AppCompatActivity {
         usuarioId = (EditText) findViewById(R.id.editTxtNome);
         contaEnergiaid = (EditText) findViewById(R.id.EditTxtContaLuz);
 
+        
+
         botaoSeguir1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 String usuario_pv = usuarioId.getText().toString();
                 String conta_pv = contaEnergiaid.getText().toString();
 
@@ -43,6 +48,7 @@ public class MainActivity extends AppCompatActivity {
                             radioButtonpadraoEntra = (RadioButton) findViewById(idRadioButtonEscolhido);
                             // Intent intent_padrao1 = new Intent(MainActivity.this,Main2Activity_dados_inversor.class);
                             //intent_padrao1.putExtra("tipo_entrada",radioButtonpadraoEntra.getText());
+
                             startActivity(new Intent(MainActivity.this,Main2Activity_dados_inversor.class));
                         }else{
                             Toast.makeText(MainActivity.this,"Escolha um padrão" +

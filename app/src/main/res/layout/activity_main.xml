@@ -47,10 +47,12 @@
         android:background="@android:color/background_light"
         android:contentDescription="@string/nome_txt_open"
         android:ems="10"
+        android:hint="@string/hint_nome_login"
         android:inputType="textPersonName"
+        android:labelFor="@+id/editTxtNome"
         android:singleLine="false"
-        android:visibility="visible"
-        android:labelFor="@+id/editTxtNome"/>
+        android:textColor="@android:color/black"
+        android:visibility="visible" />
 
     <ImageView
         android:id="@+id/imageView"
@@ -134,9 +136,11 @@
         android:layout_alignTop="@+id/imageView4"
         android:background="@android:color/background_light"
         android:ems="10"
+        android:hint="@string/hint_cont_login"
         android:inputType="numberDecimal"
-        android:textSize="14sp"
-        android:labelFor="@+id/EditTxtContaLuz"/>
+        android:labelFor="@+id/EditTxtContaLuz"
+        android:textColor="@android:color/black"
+        android:textSize="14sp" />
 
     <TextView
         android:id="@+id/textView4"

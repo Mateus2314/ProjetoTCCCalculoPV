@@ -22,5 +22,7 @@
     <string name="frequencia_txt_rede">Frequencia da rede (Hz):</string>
     <string name="seguir_txt_2">Seguir</string>
     <string name="voltar_txt_act1">Voltar</string>
+    <string name="hint_nome_login">Digite o seu nome completo.</string>
+    <string name="hint_cont_login">Digite o valor da sua conta de energia em R$:</string>
     />
 </resources>
