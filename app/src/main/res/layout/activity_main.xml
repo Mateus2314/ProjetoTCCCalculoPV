@@ -104,13 +104,14 @@
         android:orientation="vertical">
 
         <RadioButton
-            android:id="@+id/radioButton"
+            android:id="@+id/radioMonofasico"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="@string/txt_padrao_entrada_mono" />
 
         <RadioButton
+            android:id="@+id/RadioTrifas"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"

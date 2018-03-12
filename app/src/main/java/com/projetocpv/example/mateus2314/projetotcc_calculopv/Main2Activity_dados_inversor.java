@@ -46,7 +46,7 @@ public class Main2Activity_dados_inversor extends AppCompatActivity {
         Vmaxcc = (EditText) findViewById(R.id.idVmaxcc);
         Imaxstring = (EditText) findViewById(R.id.IdcorrenteMaxStr);
         Freqrede = (EditText) findViewById(R.id.idFreqRede);
-        seguir3act = (Button) findViewById(R.id.botaoseguir1id);
+        seguir3act = (Button) findViewById(R.id.idbuttonseguiact3);
         volta1act = (Button) findViewById(R.id.idvoltar);
 
         volta1act.setOnClickListener(new View.OnClickListener() {
