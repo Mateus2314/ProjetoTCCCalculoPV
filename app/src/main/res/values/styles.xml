@@ -10,4 +10,8 @@
 
     <style name="botao_open">Seguir</style>
 
+    <style name="Theme.AppCompat.Light.DarkActionBar">Theme_dark</style>
+
+    <style name="Theme"></style>
+
 </resources>

@@ -43,11 +43,12 @@
             android:layout_alignBottom="@+id/textView6"
             android:layout_alignParentEnd="true"
             android:layout_toEndOf="@+id/textView6"
-            android:background="@android:color/background_light"
+            android:background="#030101"
             android:ems="10"
+            android:hint="@string/renogive"
             android:inputType="textPersonName"
             android:labelFor="@+id/idModInver"
-            />
+            android:textAlignment="center" />
 
         <TextView
             android:id="@+id/textView7"
@@ -66,10 +67,12 @@
             android:layout_alignBaseline="@+id/textView7"
             android:layout_alignBottom="@+id/textView7"
             android:layout_toEndOf="@+id/textView7"
-            android:background="@android:color/background_light"
+            android:background="#030101"
             android:ems="10"
+            android:hint="@string/_3_kw_pico"
             android:inputType="numberDecimal"
-            android:labelFor="@+id/id_pot_nominal"/>
+            android:labelFor="@+id/id_pot_nominal"
+            android:textAlignment="center" />
 
         <TextView
             android:id="@+id/textView8"
@@ -88,10 +91,12 @@
             android:layout_alignBaseline="@+id/textView8"
             android:layout_alignBottom="@+id/textView8"
             android:layout_toEndOf="@+id/textView8"
-            android:background="@android:color/background_light"
+            android:background="#030101"
             android:ems="10"
+            android:hint="@string/_2"
             android:inputType="number"
-            android:labelFor="@+id/idnumTracMPPT" />
+            android:labelFor="@+id/idnumTracMPPT"
+            android:textAlignment="center" />
 
         <TextView
             android:id="@+id/textView9"
@@ -111,11 +116,12 @@
             android:layout_height="wrap_content"
             android:layout_alignTop="@+id/textView9"
             android:layout_toEndOf="@+id/textView9"
-            android:background="@android:color/background_light"
+            android:background="#030101"
             android:ems="10"
+            android:hint="@string/_100_v"
             android:inputType="textPersonName|numberDecimal"
             android:labelFor="@+id/idmenor_mppt"
-            />
+            android:textAlignment="center" />
 
         <TextView
             android:id="@+id/textView10"
@@ -134,11 +140,12 @@
             android:layout_alignBaseline="@+id/textView10"
             android:layout_alignBottom="@+id/textView10"
             android:layout_toEndOf="@+id/textView10"
-            android:background="@android:color/background_light"
+            android:background="#030101"
             android:ems="10"
+            android:hint="@string/_300_v"
             android:inputType="textPersonName|numberDecimal"
             android:labelFor="@+id/idmaiorVMPPT"
-            />
+            android:textAlignment="center" />
 
         <TextView
             android:id="@+id/textView11"
@@ -157,11 +164,12 @@
             android:layout_alignBaseline="@+id/textView11"
             android:layout_alignBottom="@+id/textView11"
             android:layout_toEndOf="@+id/textView11"
-            android:background="@android:color/background_light"
+            android:background="#030101"
             android:ems="10"
+            android:hint="@string/_50"
             android:inputType="number"
             android:labelFor="@+id/id_coefi_MPPT"
-            />
+            android:textAlignment="center" />
 
         <TextView
             android:id="@+id/textView12"
@@ -180,10 +188,12 @@
             android:layout_alignBaseline="@+id/textView12"
             android:layout_alignBottom="@+id/textView12"
             android:layout_toEndOf="@+id/textView12"
-            android:background="@android:color/background_light"
+            android:background="#030101"
             android:ems="10"
+            android:hint="@string/_95"
             android:inputType="number"
-            android:labelFor="@+id/Id_fator_pot"/>
+            android:labelFor="@+id/Id_fator_pot"
+            android:textAlignment="center" />
 
         <TextView
             android:id="@+id/textView13"
@@ -202,10 +212,12 @@
             android:layout_alignBaseline="@+id/textView13"
             android:layout_alignBottom="@+id/textView13"
             android:layout_toEndOf="@+id/textView13"
-            android:background="@android:color/background_light"
+            android:background="#030101"
             android:ems="10"
+            android:hint="@string/_4"
             android:inputType="numberDecimal"
-            android:labelFor="@+id/id_THD"/>
+            android:labelFor="@+id/id_THD"
+            android:textAlignment="center" />
 
         <TextView
             android:id="@+id/textView14"
@@ -224,11 +236,12 @@
             android:layout_alignBaseline="@+id/textView14"
             android:layout_alignBottom="@+id/textView14"
             android:layout_toEndOf="@+id/textView14"
-            android:background="@android:color/background_light"
+            android:background="#030101"
             android:ems="10"
+            android:hint="@string/_1000v"
             android:inputType="numberDecimal"
             android:labelFor="@+id/idVmaxcc"
-            />
+            android:textAlignment="center" />
 
         <TextView
             android:id="@+id/textView15"
@@ -247,10 +260,12 @@
             android:layout_alignBaseline="@+id/textView15"
             android:layout_alignBottom="@+id/textView15"
             android:layout_toEndOf="@+id/textView15"
-            android:background="@android:color/background_light"
+            android:background="#030101"
             android:ems="10"
+            android:hint="@string/_9a"
             android:inputType="numberDecimal"
-            android:labelFor="@+id/IdcorrenteMaxStr"/>
+            android:labelFor="@+id/IdcorrenteMaxStr"
+            android:textAlignment="center" />
 
         <TextView
             android:id="@+id/textView16"
@@ -268,10 +283,12 @@
             android:layout_height="wrap_content"
             android:layout_alignBottom="@+id/textView16"
             android:layout_toEndOf="@+id/textView16"
-            android:background="@android:color/background_light"
+            android:background="#030101"
             android:ems="10"
+            android:hint="@string/_60_hz"
             android:inputType="number"
-            android:labelFor="@+id/idFreqRede" />
+            android:labelFor="@+id/idFreqRede"
+            android:textAlignment="center" />
 
         <Button
             android:id="@+id/idbuttonseguiact3"

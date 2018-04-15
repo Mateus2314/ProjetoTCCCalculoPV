@@ -44,7 +44,7 @@
         android:layout_below="@+id/titulo"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="27dp"
-        android:background="@android:color/background_light"
+        android:background="#030101"
         android:contentDescription="@string/nome_txt_open"
         android:ems="10"
         android:hint="@string/hint_nome_login"
@@ -52,7 +52,8 @@
         android:labelFor="@+id/editTxtNome"
         android:singleLine="false"
         android:textColor="@android:color/black"
-        android:visibility="visible" />
+        android:visibility="visible"
+        tools:ignore="ContentDescription" />
 
     <ImageView
         android:id="@+id/imageView"
@@ -135,7 +136,7 @@
         android:layout_height="50sp"
         android:layout_alignStart="@+id/editTxtNome"
         android:layout_alignTop="@+id/imageView4"
-        android:background="@android:color/background_light"
+        android:background="#030101"
         android:ems="10"
         android:hint="@string/hint_cont_login"
         android:inputType="numberDecimal"
