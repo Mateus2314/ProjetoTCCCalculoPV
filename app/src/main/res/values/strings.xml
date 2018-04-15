@@ -1,45 +1,51 @@
 <resources>
-    <string name="app_name">Projeto TCC - Calculo PV</string>
-    <string name="titulo_open_txt">Projeto Calculadora Solar</string>
-    <string name="nome_txt_open">Digite o seu nome completo!</string>
-    <string name="txt_preco">Digite o valor da sua conta de energia mensal.</string>
-    <string name="txt_obs_open">obs: Coloque o valor em reais</string>
-    <string name="txt_open_padrao_entrada">Qual o tipo do padrão de entrada da sua casa?</string>
-    <string name="txt_padrao_entrada_mono">Monofásico</string>
-    <string name="txt_padrao_entrada_tri">Trifásico</string>
-    <string name="botao_open_txt">Seguir</string>
-    <string name="titulo_txt_inv">Informações do Inversor</string>
-    <string name="Md_txt_inv">Modelo do Inverso:</string>
-    <string name="pot_txt_nom">Potência nominal (kW):</string>
-    <string name="num_txt_mppt_trac">Número de trackers de MPPT:</string>
-    <string name="txt_menor_mppt">Menor tensão de MPPT (V):</string>
-    <string name="maior_mppt_txt">Maior tensão de MPPT (V):</string>
-    <string name="Coe_txt_MPPT">Coeficiente de MPPT (%):</string>
-    <string name="fator_txt_pot">Fator de potência (%):</string>
-    <string name="THD_txt">THD (%):</string>
-    <string name="v_cc_txt">Tensão máxima cc (V):</string>
-    <string name="corre_txt_max_string">Corrente maximo por String (A):</string>
-    <string name="frequencia_txt_rede">Frequencia da rede (Hz):</string>
-    <string name="seguir_txt_2">Seguir</string>
-    <string name="voltar_txt_act1">Voltar</string>
-    <string name="hint_nome_login">Digite o seu nome completo.</string>
-    <string name="hint_cont_login">Digite o valor da sua conta de energia em R$:</string>
-    <string name="efi_inv">Digite a eficiencia do inversor</string>
-    <string name="titulo_Inv2_des">Informações do Inversor</string>
-    <string name="efici_inv_1">Rendimento do inversor:</string>
-    <string name="_19">19%</string>
-    <string name="tensao_Saida_texto">Tensão CA de saída :</string>
-    <string name="_30V">30 V</string>
-    <string name="renogive">Renogive</string>
-    <string name="_3_kw_pico">3 kW(pico)</string>
-    <string name="_2">2</string>
-    <string name="_100_v">100 V</string>
-    <string name="_300_v">300 V</string>
-    <string name="_50">50 %</string>
-    <string name="_95">95 %</string>
-    <string name="_4">4%</string>
-    <string name="_1000v">1000V</string>
-    <string name="_9a">9A</string>
-    <string name="_60_hz">60 Hz</string>
+    <string name="app_name">TCC Project - PV Calculator</string>
+    <string name="titulo_open_txt">"Calculator Solar Project "</string>
+    <string name="nome_txt_open">Type your full name!</string>
+    <string name="txt_preco">Type how much you pay from your energy bill.</string>
+    <string name="txt_obs_open">obs: Type the value in reais</string>
+    <string name="txt_padrao_entrada_mono" translatable="false">Monofásico</string>
+    <string name="txt_padrao_entrada_tri" translatable="false">Trifásico</string>
+    <string name="botao_open_txt">Next</string>
+    <string name="titulo_txt_inv" translatable="false">Informações do Inversor</string>
+    <string name="Md_txt_inv" translatable="false">Modelo do Inverso:</string>
+    <string name="pot_txt_nom" translatable="false">Potência nominal (kW):</string>
+    <string name="num_txt_mppt_trac" translatable="false">Número de trackers de MPPT:</string>
+    <string name="txt_menor_mppt" translatable="false">Menor tensão de MPPT (V):</string>
+    <string name="maior_mppt_txt" translatable="false">Maior tensão de MPPT (V):</string>
+    <string name="Coe_txt_MPPT" translatable="false">Coeficiente de MPPT (%):</string>
+    <string name="fator_txt_pot" translatable="false">Fator de potência (%):</string>
+    <string name="THD_txt" translatable="false">THD (%):</string>
+    <string name="v_cc_txt" translatable="false">Tensão máxima cc (V):</string>
+    <string name="corre_txt_max_string" translatable="false">Corrente maximo por String (A):</string>
+    <string name="frequencia_txt_rede" translatable="false">Frequencia da rede (Hz):</string>
+    <string name="seguir_txt_2" translatable="false">Seguir</string>
+    <string name="voltar_txt_act1" translatable="false">Voltar</string>
+    <string name="hint_nome_login" translatable="false">Digite o seu nome completo.</string>
+    <string name="hint_cont_login" translatable="false">Digite o valor da sua conta de energia em R$:</string>
+    <string name="efi_inv" translatable="false">Digite a eficiencia do inversor</string>
+    <string name="titulo_Inv2_des" translatable="false">Informações do Inversor</string>
+    <string name="efici_inv_1" translatable="false">Rendimento do inversor:</string>
+    <string name="_19" translatable="false">19%</string>
+    <string name="tensao_Saida_texto" translatable="false">Tensão CA de saída :</string>
+    <string name="_30V" translatable="false">30 V</string>
+    <string name="renogive" translatable="false">Renogive</string>
+    <string name="_3_kw_pico" translatable="false">3 kW(pico)</string>
+    <string name="_2" translatable="false">2</string>
+    <string name="_100_v" translatable="false">100 V</string>
+    <string name="_300_v" translatable="false">300 V</string>
+    <string name="_50" translatable="false">50 %</string>
+    <string name="_95" translatable="false">95 %</string>
+    <string name="_4" translatable="false">4%</string>
+    <string name="_1000v" translatable="false">1000V</string>
+    <string name="_9a" translatable="false">9A</string>
+    <string name="_60_hz" translatable="false">60 Hz</string>
+    <string name="corrente_Saida_texto" translatable="false">Corrente CA de Saída :</string>
+    <string name="_9_a" translatable="false">9 A</string>
+    <string name="txt_open_padrao_entrada" translatable="false">Qual o tipo do padrão de entrada da sua casa?</string>
+    <![CDATA[
+
     />
+
+]]>
 </resources>

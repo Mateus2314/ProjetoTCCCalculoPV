@@ -55,7 +55,6 @@
             android:id="@+id/edit_rend_inv"
             android:layout_width="0dp"
             android:layout_height="28dp"
-            android:layout_marginEnd="8dp"
             android:layout_marginStart="8dp"
             android:background="#030101"
             android:ems="10"
@@ -76,7 +75,6 @@
             android:layout_width="0dp"
             android:layout_height="29dp"
             android:layout_marginBottom="8dp"
-            android:layout_marginEnd="8dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
             android:background="#030101"
@@ -92,6 +90,23 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/tex_tens_said"
             app:layout_constraintTop_toTopOf="@+id/guideline2" />
+
+        <EditText
+            android:id="@+id/editCorrente_Saida"
+            android:layout_width="187dp"
+            android:layout_height="29dp"
+            android:layout_marginEnd="8dp"
+            android:background="#030101"
+            android:ems="10"
+            android:hint="@string/_9_a"
+            android:inputType="numberDecimal"
+            android:selectAllOnFocus="false"
+            android:singleLine="false"
+            android:textAlignment="center"
+            android:textColor="@android:color/holo_green_dark"
+            android:textSize="18sp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/tex_corrente_said2"
+            app:layout_constraintEnd_toEndOf="parent" />
 
         <android.support.constraint.Guideline
             android:id="@+id/guideline"
@@ -121,6 +136,7 @@
             android:id="@+id/tex_tens_said"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:contentDescription="@string/tensao_Saida_texto"
             android:layerType="software"
             android:text="@string/tensao_Saida_texto"
             android:textColor="?android:attr/colorBackgroundCacheHint"
@@ -130,15 +146,18 @@
             app:layout_constraintStart_toStartOf="parent" />
 
         <TextView
-            android:id="@+id/tex_tens_said2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:id="@+id/tex_corrente_said2"
+            android:layout_width="0dp"
+            android:layout_height="24dp"
             android:layout_marginTop="8dp"
+            android:contentDescription="@string/corrente_Saida_texto"
             android:layerType="software"
-            android:text="@string/tensao_Saida_texto"
+            android:text="@string/corrente_Saida_texto"
+            android:textAlignment="viewStart"
             android:textColor="?android:attr/colorBackgroundCacheHint"
             android:textSize="18sp"
             android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/editCorrente_Saida"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@+id/guideline3" />
 

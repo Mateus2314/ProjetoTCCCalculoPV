@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Projeto TCC - Calculo PV</string>
+    <string name="titulo_open_txt">Projeto Calculadora Solar</string>
+    <string name="nome_txt_open">Digite o seu nome completo!</string>
+    <string name="txt_preco">Digite o valor da sua conta de energia mensal.</string>
+    <string name="txt_obs_open">obs: Coloque o valor em reais</string>
+    <string name="botao_open_txt">Seguir</string>
+</resources>
