@@ -24,5 +24,11 @@
     <string name="voltar_txt_act1">Voltar</string>
     <string name="hint_nome_login">Digite o seu nome completo.</string>
     <string name="hint_cont_login">Digite o valor da sua conta de energia em R$:</string>
+    <string name="efi_inv">Digite a eficiencia do inversor</string>
+    <string name="titulo_Inv2_des">Informações do Inversor</string>
+    <string name="efici_inv_1">Rendimento do inversor:</string>
+    <string name="_19">19%</string>
+    <string name="tensao_Saida_texto">Tensão de saída :</string>
+    <string name="_30V">30 V</string>
     />
 </resources>
