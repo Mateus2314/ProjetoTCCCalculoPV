@@ -121,7 +121,6 @@
             android:id="@+id/tex_tens_said"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
             android:layerType="software"
             android:text="@string/tensao_Saida_texto"
             android:textColor="?android:attr/colorBackgroundCacheHint"
@@ -129,6 +128,20 @@
             android:textStyle="bold"
             app:layout_constraintBaseline_toBaselineOf="@+id/editTensao_Saida"
             app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/tex_tens_said2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layerType="software"
+            android:text="@string/tensao_Saida_texto"
+            android:textColor="?android:attr/colorBackgroundCacheHint"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline3" />
 
         <android.support.constraint.Guideline
             android:id="@+id/guideline3"
