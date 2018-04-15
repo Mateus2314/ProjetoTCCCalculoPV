@@ -43,6 +43,13 @@
     <string name="corrente_Saida_texto" translatable="false">Corrente CA de Saída :</string>
     <string name="_9_a" translatable="false">9 A</string>
     <string name="txt_open_padrao_entrada" translatable="false">Qual o tipo do padrão de entrada da sua casa?</string>
+    <string name="text_Peso_Inv">Peso do inversor :</string>
+    <string name="text_Area_inv">Area do inversor</string>
+    <string name="_20_kg">20 kg</string>
+    <string name="_20_kg">20 kg</string>
+    <string name="_1_m">1 m²</string>
+    <string name="text_Garantia_preco">Garantia do inversor:</string>
+    <string name="_10_anos">10 Anos</string>
     <![CDATA[
 
     />
