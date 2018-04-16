@@ -14,10 +14,10 @@
         android:background="@android:color/holo_blue_dark">
 
         <TextView
-            android:id="@+id/titulo_inv_2"
+            android:id="@+id/titulo_rend_inv_2"
             android:layout_width="201dp"
             android:layout_height="0dp"
-            android:layout_marginBottom="55dp"
+            android:layout_marginBottom="347dp"
             android:layout_marginTop="54dp"
             android:contentDescription="@string/efi_inv"
             android:layerType="software"
@@ -27,7 +27,7 @@
             android:textColor="?android:attr/colorBackgroundCacheHint"
             android:textSize="18sp"
             android:textStyle="bold"
-            app:layout_constraintBottom_toTopOf="@+id/guideline3"
+            app:layout_constraintBottom_toTopOf="@+id/guideline4"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -45,7 +45,7 @@
             android:text="@string/titulo_txt_inv"
             android:textColor="@android:color/background_light"
             android:textSize="24sp"
-            app:layout_constraintBottom_toTopOf="@+id/titulo_inv_2"
+            app:layout_constraintBottom_toTopOf="@+id/titulo_rend_inv_2"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/guideline"
             app:layout_constraintStart_toStartOf="parent"
@@ -64,10 +64,10 @@
             android:textAlignment="center"
             android:textColor="@android:color/holo_green_dark"
             android:textSize="18sp"
-            app:layout_constraintBaseline_toBaselineOf="@+id/titulo_inv_2"
+            app:layout_constraintBaseline_toBaselineOf="@+id/titulo_rend_inv_2"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toEndOf="@+id/titulo_inv_2" />
+            app:layout_constraintStart_toEndOf="@+id/titulo_rend_inv_2" />
 
         <EditText
             android:id="@+id/editTensao_Saida"
@@ -158,6 +158,23 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/tex_garantia_preco" />
 
+        <EditText
+            android:id="@+id/edit_Preco_Inv"
+            android:layout_width="0dp"
+            android:layout_height="29dp"
+            android:background="#030101"
+            android:ems="10"
+            android:hint="@string/r_2000_00"
+            android:inputType="numberDecimal"
+            android:selectAllOnFocus="false"
+            android:singleLine="false"
+            android:textAlignment="center"
+            android:textColor="@android:color/holo_green_dark"
+            android:textSize="18sp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/tex_preco_inv"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tex_preco_inv" />
+
         <android.support.constraint.Guideline
             android:id="@+id/guideline"
             android:layout_width="wrap_content"
@@ -166,7 +183,7 @@
             android:layout_marginEnd="7dp"
             android:layout_marginTop="42dp"
             android:orientation="horizontal"
-            app:layout_constraintBottom_toTopOf="@+id/titulo_inv_2"
+            app:layout_constraintBottom_toTopOf="@+id/titulo_rend_inv_2"
             app:layout_constraintEnd_toStartOf="@+id/titulo_Inv2"
             app:layout_constraintGuide_percent="0.08219178"
             app:layout_constraintStart_toStartOf="parent"
@@ -180,7 +197,7 @@
             android:orientation="horizontal"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintGuide_begin="81dp"
-            app:layout_constraintTop_toBottomOf="@+id/titulo_inv_2" />
+            app:layout_constraintTop_toBottomOf="@+id/titulo_rend_inv_2" />
 
         <TextView
             android:id="@+id/tex_tens_said"
@@ -256,19 +273,19 @@
             app:layout_constraintTop_toBottomOf="@+id/tex_area_inv" />
 
         <TextView
-            android:id="@+id/tex_garantia_preco2"
+            android:id="@+id/tex_preco_inv"
             android:layout_width="0dp"
             android:layout_height="24dp"
-            android:layout_marginTop="48dp"
+            android:layout_marginTop="16dp"
             android:contentDescription="@string/corrente_Saida_texto"
             android:layerType="software"
-            android:text="@string/text_Garantia_preco"
+            android:text="@string/text_preco_inv"
             android:textAlignment="viewStart"
             android:textColor="?android:attr/colorBackgroundCacheHint"
             android:textSize="18sp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tex_area_inv" />
+            app:layout_constraintTop_toBottomOf="@+id/tex_garantia_preco" />
 
         <android.support.constraint.Guideline
             android:id="@+id/guideline3"
@@ -278,14 +295,40 @@
             android:orientation="horizontal"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintGuide_percent="0.26"
-            app:layout_constraintTop_toBottomOf="@+id/titulo_inv_2" />
+            app:layout_constraintTop_toBottomOf="@+id/titulo_rend_inv_2" />
 
         <android.support.constraint.Guideline
             android:id="@+id/guideline4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="85dp"
             android:orientation="horizontal"
-            app:layout_constraintGuide_end="491dp" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintGuide_begin="425dp"
+            app:layout_constraintTop_toBottomOf="@+id/titulo_rend_inv_2" />
+
+        <Button
+            android:id="@+id/idbuttonVoltaract2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:contentDescription="@string/voltar_txt_act1"
+            android:text="@string/voltar_txt_act1"
+            app:layout_constraintBaseline_toBaselineOf="@+id/idbuttonSeguirAct4"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/idbuttonSeguirAct4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="8dp"
+            android:contentDescription="@string/seguir_txt_2"
+            android:text="@string/seguir_txt_2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline4" />
 
     </android.support.constraint.ConstraintLayout>
 
