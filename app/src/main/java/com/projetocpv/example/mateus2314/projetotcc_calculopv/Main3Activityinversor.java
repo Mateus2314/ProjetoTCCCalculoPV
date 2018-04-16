@@ -3,6 +3,7 @@ package com.projetocpv.example.mateus2314.projetotcc_calculopv;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
@@ -33,6 +34,13 @@ public class Main3Activityinversor extends AppCompatActivity {
         Preco_inv = (EditText)findViewById(R.id.edit_Preco_Inv);
         seguir4act = (Button)findViewById(R.id.idbuttonSeguirAct4);
         volta2act = (Button)findViewById(R.id.idbuttonVoltaract2);
+
+        volta2act.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(Main3Activityinversor.this,Main2Activity_dados_inversor.class));
+            }
+        });
 
 
 

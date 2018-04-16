@@ -12,4 +12,6 @@
     <string name="_1_m">1 m²</string>
     <string name="text_Garantia_preco">Garantia do inversor:</string>
     <string name="_10_anos">10 Anos</string>
+    <string name="text_preco_inv">Preço :</string>
+    <string name="r_2000_00">R$ 2000,00</string>
 </resources>
