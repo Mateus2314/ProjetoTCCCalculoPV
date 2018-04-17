@@ -18,7 +18,8 @@
         </activity>
         <activity android:name=".Main2Activity_dados_inversor" />
         <activity android:name=".Main3Activityinversor" />
-        <activity android:name=".Main4ActivityModulo"></activity>
+        <activity android:name=".Main4ActivityModulo" />
+        <activity android:name=".Main5Activity"></activity>
     </application>
 
 </manifest>

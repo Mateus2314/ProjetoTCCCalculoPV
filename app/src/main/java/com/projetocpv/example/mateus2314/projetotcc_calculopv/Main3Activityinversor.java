@@ -33,6 +33,7 @@ public class Main3Activityinversor extends AppCompatActivity {
         Area_inv = (EditText)findViewById(R.id.editArea_Inv);
         Garantia_inv = (EditText)findViewById(R.id.edit_Garantia_Inv);
         Preco_inv = (EditText)findViewById(R.id.edit_Preco_Inv);
+
         seguir4act = (Button)findViewById(R.id.idbuttonSeguirAct4);
         volta2act = (Button)findViewById(R.id.idbuttonVoltaract2);
 
