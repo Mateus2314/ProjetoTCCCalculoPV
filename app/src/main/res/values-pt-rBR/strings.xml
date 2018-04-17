@@ -14,4 +14,11 @@
     <string name="_10_anos">10 Anos</string>
     <string name="text_preco_inv">Preço :</string>
     <string name="r_2000_00">R$ 2000,00</string>
+    <string name="Inf_titulo_modulo">Informações do Modulo Solar</string>
+    <string name="textmodulosolartxt">Modelo do modulo solar :</string>
+    <string name="yingli340p">Yingli340p</string>
+    <string name="txtpotenciaNominalwpModulosolar">Potência nominal :</string>
+    <string name="_320_wp">320 wp</string>
+    <string name="txtAreadoModuloSolar">Area do Modulo Solar</string>
+    <string name="TxtRendimentodoModuloSolar">Rendimento do Modulos Solar</string>
 </resources>
