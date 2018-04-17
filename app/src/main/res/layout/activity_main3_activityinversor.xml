@@ -17,7 +17,7 @@
         <TextView
             android:id="@+id/titulo_rend_inv_2"
             android:layout_width="201dp"
-            android:layout_height="0dp"
+            android:layout_height="31dp"
             android:layout_marginBottom="32dp"
             android:layout_marginTop="54dp"
             android:contentDescription="@string/efi_inv"
@@ -86,6 +86,7 @@
             android:textSize="18sp"
             app:layout_constraintBaseline_toBaselineOf="@+id/tex_tens_said"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toEndOf="@+id/tex_tens_said" />
 
         <EditText

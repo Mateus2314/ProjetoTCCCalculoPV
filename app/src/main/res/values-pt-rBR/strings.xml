@@ -19,6 +19,10 @@
     <string name="yingli340p">Yingli340p</string>
     <string name="txtpotenciaNominalwpModulosolar">Potência nominal :</string>
     <string name="_320_wp">320 wp</string>
-    <string name="txtAreadoModuloSolar">Area do Modulo Solar</string>
-    <string name="TxtRendimentodoModuloSolar">Rendimento do Modulos Solar</string>
+    <string name="txtAreadoModuloSolar">Area do Modulo Solar :</string>
+    <string name="TxtRendimentodoModuloSolar">Rendimento do Modulos Solar :</string>
+    <string name="textoTensaoOcmodulo">Tensão oc :</string>
+    <string name="textTensaoMedia">Tensão média (DC) :</string>
+    <string name="text_corrente_m_modulo_solar">Corrente média :</string>
+    <string name="txtpesoModuloSolar">Peso :</string>
 </resources>
