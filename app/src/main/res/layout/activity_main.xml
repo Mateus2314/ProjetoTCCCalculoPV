@@ -44,14 +44,14 @@
         android:layout_below="@+id/titulo"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="27dp"
-        android:background="#030101"
+        android:background="@android:color/darker_gray"
         android:contentDescription="@string/nome_txt_open"
         android:ems="10"
         android:hint="@string/hint_nome_login"
         android:inputType="textPersonName"
         android:labelFor="@+id/editTxtNome"
         android:singleLine="false"
-        android:textColor="@android:color/black"
+        android:textColor="@android:color/holo_green_dark"
         android:visibility="visible"
         tools:ignore="ContentDescription" />
 
@@ -136,12 +136,12 @@
         android:layout_height="50sp"
         android:layout_alignStart="@+id/editTxtNome"
         android:layout_alignTop="@+id/imageView4"
-        android:background="#030101"
+        android:background="@android:color/darker_gray"
         android:ems="10"
         android:hint="@string/hint_cont_login"
         android:inputType="numberDecimal"
         android:labelFor="@+id/EditTxtContaLuz"
-        android:textColor="@android:color/black"
+        android:textColor="@android:color/holo_green_dark"
         android:textSize="14sp" />
 
     <TextView
