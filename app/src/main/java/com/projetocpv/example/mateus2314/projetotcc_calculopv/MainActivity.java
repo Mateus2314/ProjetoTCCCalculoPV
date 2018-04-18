@@ -10,13 +10,13 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Toast;
 
-import com.github.rtoshiro.util.format.SimpleMaskFormatter;
 
 public class MainActivity extends AppCompatActivity {
 
     private RadioGroup radioGroupPadraoEntra;
     private RadioButton radioButtonpadraoEntra;
     private Button botaoSeguir1;
+    private Button buttonCalculeAgora;
     private EditText usuarioId;
     private EditText contaEnergiaid;
 
@@ -27,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
 
         radioGroupPadraoEntra = (RadioGroup) findViewById(R.id.radioGroupidentrada);
         botaoSeguir1 = (Button) findViewById(R.id.botaoseguir1id);
+        buttonCalculeAgora = (Button)findViewById(R.id.buttonCalculeAgora);
         usuarioId = (EditText) findViewById(R.id.editTxtNome);
         contaEnergiaid = (EditText) findViewById(R.id.EditTxtContaLuz);
 
@@ -54,6 +55,21 @@ public class MainActivity extends AppCompatActivity {
                             Toast.makeText(MainActivity.this,"Escolha um padrão" +
                                     " de entrada",Toast.LENGTH_LONG).show();
                         }
+                }
+            }
+        });
+        buttonCalculeAgora.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String usuario_pv = usuarioId.getText().toString();
+                String conta_pv = contaEnergiaid.getText().toString();
+                if (conta_pv.isEmpty()||usuario_pv.isEmpty()){
+                    Toast.makeText(MainActivity.this, "Preencha os dados pedidos", Toast.LENGTH_LONG).show();
+                }else {
+                    Float conta_float2 = Float.parseFloat(conta_pv);
+                    Intent intent_padrao1 = new Intent(MainActivity.this, CalculeAgoraInicioActivity.class);
+                    intent_padrao1.putExtra("contaEnergia",conta_float2);
+                    startActivity(new Intent(MainActivity.this,CalculeAgoraInicioActivity.class));
                 }
             }
         });

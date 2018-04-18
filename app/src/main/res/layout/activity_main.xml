@@ -131,6 +131,15 @@
         android:text="@string/botao_open_txt"
         tools:ignore="UnknownId" />
 
+    <Button
+        android:id="@+id/buttonCalculeAgora"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/botaoseguir1id"
+        android:layout_centerHorizontal="true"
+        android:text="@string/txtCalculeAgora"
+        tools:ignore="UnknownId" />
+
     <EditText
         android:id="@+id/EditTxtContaLuz"
         android:layout_width="300dp"

@@ -62,6 +62,15 @@
     <string name="textTensaoMedia">Tensão média (DC) :</string>
     <string name="text_corrente_m_modulo_solar">Corrente média :</string>
     <string name="txtpesoModuloSolar">Peso :</string>
+    <string name="txtCalculeAgora">Calcule Agora</string>
+    <string name="txtEscolhaEquipamentos">Escolha quais equipamentos usar</string>
+    <string name="txttipodoModuloSolar">Escolha qual o seu Modulo Solar :</string>
+    <string-array name="modulosSolares">
+        <item>225 wp</item>
+        <item>275 wp</item>
+        <item>320 wp</item>
+        <item>Canadian 325 wp</item>
+    </string-array>
     <![CDATA[
 
     />
