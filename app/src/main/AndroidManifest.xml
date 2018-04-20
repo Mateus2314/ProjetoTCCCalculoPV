@@ -9,18 +9,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".activities.activities.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Main2Activity_dados_inversor" />
-        <activity android:name=".Main3Activityinversor" />
-        <activity android:name=".Main4ActivityModulo" />
-        <activity android:name=".Main5Activity" />
-        <activity android:name=".CalculeAgoraInicioActivity"></activity>
+        <activity android:name=".activities.activities.Main2Activity_dados_inversor" />
+        <activity android:name=".activities.activities.Main3Activityinversor" />
+        <activity android:name=".activities.activities.Main4ActivityModulo" />
+        <activity android:name=".activities.activities.Main5Activity" />
+        <activity android:name=".activities.activities.CalculeAgoraInicioActivity"></activity>
     </application>
 
 </manifest>

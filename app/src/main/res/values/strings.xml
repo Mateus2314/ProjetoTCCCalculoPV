@@ -65,6 +65,11 @@
     <string name="txtCalculeAgora">Calcule Agora</string>
     <string name="txtEscolhaEquipamentos">Escolha quais equipamentos usar</string>
     <string name="txttipodoModuloSolar">Escolha qual o seu Modulo Solar :</string>
+    <string name="digite_o_seu_e_mail">Digite o seu e-mail</string>
+    <string name="buttcadastrarInversor">Inversor</string>
+    <string name="txtButtonCadastroModulosSolares">Paineis</string>
+    <string name="logocerf">LogoCERF</string>
+    <string name="todo">TODO</string>
     <string-array name="modulosSolares">
         <item>225 wp</item>
         <item>275 wp</item>
