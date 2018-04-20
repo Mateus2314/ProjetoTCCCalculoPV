@@ -60,7 +60,7 @@
             android:layout_marginEnd="8dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
-            android:onClick="inversor"
+            android:onClick="funcao_inversores"
             android:text="@string/buttcadastrarInversor"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/guideline11"
@@ -90,8 +90,6 @@
             android:id="@+id/idtex_obs"
             android:layout_width="0dp"
             android:layout_height="19dp"
-            android:layout_alignStart="@+id/EditTxtContaLuz"
-            android:layout_below="@+id/EditTxtContaLuz"
             android:layout_marginEnd="8dp"
             android:layout_marginStart="8dp"
             android:text="@string/txt_obs_open"
@@ -102,7 +100,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/iwfigure2"
             app:layout_constraintTop_toBottomOf="@+id/TextInputLayoutContaLuz"
-            tools:ignore="NotSibling,UnknownId" />
+            />
 
         <android.support.design.widget.TextInputLayout
             android:id="@+id/TextInputLayoutNome"
@@ -148,6 +146,7 @@
             tools:ignore="MissingConstraints">
 
             <EditText
+                android:id="@+id/et_contaener"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignStart="@+id/editTxtNome"

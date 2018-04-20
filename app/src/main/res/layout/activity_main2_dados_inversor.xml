@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:android="http://schemas.android.com/apk/res/android"
@@ -8,316 +8,308 @@
     android:fillViewport="true"
     android:theme="@style/Base.Theme.AppCompat">
 
-    <RelativeLayout
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
 
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@android:color/holo_blue_dark">
+        android:layout_height="wrap_content">
 
 
         <TextView
             android:id="@+id/textView5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_height="33dp"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
-            android:layout_marginStart="40dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
             android:text="@string/titulo_txt_inv"
-            android:textColor="@android:color/background_light"
-            android:textSize="24sp" />
-
-        <TextView
-            android:id="@+id/textView6"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_below="@+id/textView5"
-            android:layout_marginTop="13dp"
-            android:text="@string/Md_txt_inv"
-            android:textSize="18sp" />
-
-        <EditText
-            android:id="@+id/idModInver"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignBaseline="@+id/textView6"
-            android:layout_alignBottom="@+id/textView6"
-            android:layout_alignParentEnd="true"
-            android:layout_toEndOf="@+id/textView6"
-            android:background="@android:color/darker_gray"
-            android:ems="10"
-            android:hint="@string/renogive"
-            android:inputType="textPersonName"
-            android:labelFor="@+id/idModInver"
             android:textAlignment="center"
-            android:textColor="@android:color/holo_green_dark" />
-
-        <TextView
-            android:id="@+id/textView7"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_below="@+id/textView6"
-            android:layout_marginTop="14dp"
-            android:text="@string/pot_txt_nom"
-            android:textSize="18sp" />
-
-        <EditText
-            android:id="@+id/id_pot_nominal"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignBaseline="@+id/textView7"
-            android:layout_alignBottom="@+id/textView7"
-            android:layout_toEndOf="@+id/textView7"
-            android:background="@android:color/darker_gray"
-            android:ems="10"
-            android:hint="@string/_3_kw_pico"
-            android:inputType="numberDecimal"
-            android:labelFor="@+id/id_pot_nominal"
-            android:textAlignment="center"
-            android:textColor="@android:color/holo_green_dark" />
-
-        <TextView
-            android:id="@+id/textView8"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_below="@+id/textView7"
-            android:layout_marginTop="12dp"
-            android:text="@string/num_txt_mppt_trac"
-            android:textSize="18sp" />
-
-        <EditText
-            android:id="@+id/idnumTracMPPT"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignBaseline="@+id/textView8"
-            android:layout_alignBottom="@+id/textView8"
-            android:layout_toEndOf="@+id/textView8"
-            android:background="@android:color/darker_gray"
-            android:ems="10"
-            android:hint="@string/_2"
-            android:inputType="number"
-            android:labelFor="@+id/idnumTracMPPT"
-            android:textAlignment="center"
-            android:textColor="@android:color/holo_green_dark" />
-
-        <TextView
-            android:id="@+id/textView9"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_below="@+id/textView8"
-            android:layout_marginTop="13dp"
-            android:text="@string/txt_menor_mppt"
-            android:textSize="18sp"
-
-            />
-
-        <EditText
-            android:id="@+id/idmenor_mppt"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignTop="@+id/textView9"
-            android:layout_toEndOf="@+id/textView9"
-            android:background="@android:color/darker_gray"
-            android:ems="10"
-            android:hint="@string/_100_v"
-            android:inputType="textPersonName|numberDecimal"
-            android:labelFor="@+id/idmenor_mppt"
-            android:textAlignment="center"
-            android:textColor="@android:color/holo_green_dark" />
-
-        <TextView
-            android:id="@+id/textView10"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_below="@+id/textView9"
-            android:layout_marginTop="11dp"
-            android:text="@string/maior_mppt_txt"
-            android:textSize="18sp" />
-
-        <EditText
-            android:id="@+id/idmaiorVMPPT"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignBaseline="@+id/textView10"
-            android:layout_alignBottom="@+id/textView10"
-            android:layout_toEndOf="@+id/textView10"
-            android:background="@android:color/darker_gray"
-            android:ems="10"
-            android:hint="@string/_300_v"
-            android:inputType="textPersonName|numberDecimal"
-            android:labelFor="@+id/idmaiorVMPPT"
-            android:textAlignment="center"
-            android:textColor="@android:color/holo_green_dark" />
-
-        <TextView
-            android:id="@+id/textView11"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_below="@+id/textView10"
-            android:layout_marginTop="13dp"
-            android:text="@string/Coe_txt_MPPT"
-            android:textSize="18sp" />
-
-        <EditText
-            android:id="@+id/id_coefi_MPPT"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignBaseline="@+id/textView11"
-            android:layout_alignBottom="@+id/textView11"
-            android:layout_toEndOf="@+id/textView11"
-            android:background="@android:color/darker_gray"
-            android:ems="10"
-            android:hint="@string/_50"
-            android:inputType="number"
-            android:labelFor="@+id/id_coefi_MPPT"
-            android:textAlignment="center"
-            android:textColor="@android:color/holo_green_dark" />
-
-        <TextView
-            android:id="@+id/textView12"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_below="@+id/textView11"
-            android:layout_marginTop="12dp"
-            android:text="@string/fator_txt_pot"
-            android:textSize="18sp" />
-
-        <EditText
-            android:id="@+id/Id_fator_pot"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignBaseline="@+id/textView12"
-            android:layout_alignBottom="@+id/textView12"
-            android:layout_toEndOf="@+id/textView12"
-            android:background="@android:color/darker_gray"
-            android:ems="10"
-            android:hint="@string/_95"
-            android:inputType="number"
-            android:labelFor="@+id/Id_fator_pot"
-            android:textAlignment="center"
-            android:textColor="@android:color/holo_green_dark" />
-
-        <TextView
-            android:id="@+id/textView13"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_below="@+id/textView12"
-            android:layout_marginTop="15dp"
-            android:text="@string/THD_txt"
-            android:textSize="18sp" />
-
-        <EditText
-            android:id="@+id/id_THD"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignBaseline="@+id/textView13"
-            android:layout_alignBottom="@+id/textView13"
-            android:layout_toEndOf="@+id/textView13"
-            android:background="@android:color/darker_gray"
-            android:ems="10"
-            android:hint="@string/_4"
-            android:inputType="numberDecimal"
-            android:labelFor="@+id/id_THD"
-            android:textAlignment="center"
-            android:textColor="@android:color/holo_green_dark" />
-
-        <TextView
-            android:id="@+id/textView14"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_below="@+id/textView13"
-            android:layout_marginTop="17dp"
-            android:text="@string/v_cc_txt"
-            android:textSize="18sp" />
-
-        <EditText
-            android:id="@+id/idVmaxcc"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignBaseline="@+id/textView14"
-            android:layout_alignBottom="@+id/textView14"
-            android:layout_toEndOf="@+id/textView14"
-            android:background="@android:color/darker_gray"
-            android:ems="10"
-            android:hint="@string/_1000v"
-            android:inputType="numberDecimal"
-            android:labelFor="@+id/idVmaxcc"
-            android:textAlignment="center"
-            android:textColor="@android:color/holo_green_dark" />
-
-        <TextView
-            android:id="@+id/textView15"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_below="@+id/textView14"
-            android:layout_marginTop="13dp"
-            android:text="@string/corre_txt_max_string"
-            android:textSize="18sp" />
-
-        <EditText
-            android:id="@+id/IdcorrenteMaxStr"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignBaseline="@+id/textView15"
-            android:layout_alignBottom="@+id/textView15"
-            android:layout_toEndOf="@+id/textView15"
-            android:background="@android:color/darker_gray"
-            android:ems="10"
-            android:hint="@string/_9a"
-            android:inputType="numberDecimal"
-            android:labelFor="@+id/IdcorrenteMaxStr"
-            android:textAlignment="center"
-            android:textColor="@android:color/holo_green_dark" />
-
-        <TextView
-            android:id="@+id/textView16"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_below="@+id/textView15"
-            android:layout_marginTop="13dp"
-            android:text="@string/frequencia_txt_rede"
-            android:textSize="18sp" />
-
-        <EditText
-            android:id="@+id/idFreqRede"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignBottom="@+id/textView16"
-            android:layout_toEndOf="@+id/textView16"
-            android:background="@android:color/darker_gray"
-            android:ems="10"
-            android:hint="@string/_60_hz"
-            android:inputType="number"
-            android:labelFor="@+id/idFreqRede"
-            android:textAlignment="center"
-            android:textColor="@android:color/holo_green_dark" />
+            android:textColor="@android:color/black"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <Button
-            android:id="@+id/idbuttonseguiact3"
+            android:id="@+id/bt_inversor2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/idFreqRede"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
             android:layout_toEndOf="@+id/textView15"
-            android:text="@string/seguir_txt_2" />
+            android:contentDescription="@string/bt_inversor"
+            android:text="@string/seguir_txt_2"
+            app:layout_constraintBottom_toTopOf="@+id/guideline17"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/guideline18"
+            app:layout_constraintTop_toTopOf="@+id/guideline17"
+            tools:ignore="UnknownId" />
 
         <Button
-            android:id="@+id/idvoltar"
+            android:id="@+id/idvoltar_main_inv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
             android:layout_below="@+id/textView16"
-            android:layout_marginStart="24dp"
-            android:text="@string/voltar_txt_act1" />
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/voltar_txt_act1"
+            app:layout_constraintBottom_toTopOf="@+id/guideline17"
+            app:layout_constraintEnd_toStartOf="@+id/guideline18"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline17"
+            tools:ignore="UnknownId" />
 
-    </RelativeLayout>
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/TinputLayModeloInver"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"
+            android:hint="@string/Md_txt_inv"
+            android:orientation="horizontal"
+            android:textColorHint="@android:color/black"
+            app:layout_constraintBottom_toTopOf="@+id/TinputLayPotNominal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView5">
+
+            <EditText
+                android:id="@+id/et_modelo_inversor"
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:layout_alignBaseline="@+id/textView6"
+                android:layout_alignBottom="@+id/textView6"
+                android:layout_alignParentEnd="true"
+                android:layout_toEndOf="@+id/textView6"
+                android:layout_weight="1"
+                android:contentDescription="@string/modelo_do_inversor"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:labelFor="@+id/idModInver"
+                android:textAlignment="center"
+                android:textColor="@android:color/holo_green_dark"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="74dp" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/TinputLayPotNominal"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:hint="@string/pot_txt_nom"
+            android:orientation="horizontal"
+            android:textColorHint="@android:color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="91dp"
+            tools:ignore="MissingConstraints">
+
+            <EditText
+                android:id="@+id/id_pot_nominal"
+                android:layout_width="match_parent"
+                android:layout_height="39dp"
+                android:layout_alignBaseline="@+id/textView7"
+                android:layout_alignBottom="@+id/textView7"
+                android:layout_toEndOf="@+id/textView7"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:labelFor="@+id/id_pot_nominal"
+                android:textAlignment="center"
+                android:textColor="@android:color/holo_green_dark"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="91dp" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/TinputLayMPPTmenor"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="16dp"
+            android:hint="@string/txt_menor_mppt"
+            android:orientation="horizontal"
+            android:textColorHint="@android:color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/TinputLayNumTracMPPT">
+
+            <EditText
+                android:id="@+id/idmenor_mppt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/textView9"
+                android:layout_toEndOf="@+id/textView9"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textPersonName|numberDecimal"
+                android:labelFor="@+id/idmenor_mppt"
+                android:textAlignment="center"
+                android:textColor="@android:color/holo_green_dark"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="143dp" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/TinputLayNumTracMPPT"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="16dp"
+            android:hint="@string/num_txt_mppt_trac"
+            android:orientation="horizontal"
+            android:textColorHint="@android:color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/TinputLayPotNominal">
+
+            <EditText
+                android:id="@+id/idnumTracMPPT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textView8"
+                android:layout_alignBottom="@+id/textView8"
+                android:layout_toEndOf="@+id/textView8"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="number"
+                android:labelFor="@+id/idnumTracMPPT"
+                android:textAlignment="center"
+                android:textColor="@android:color/holo_green_dark"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="159dp" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/TinputLayMaiorMPPT"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="16dp"
+            android:hint="@string/maior_mppt_txt"
+            android:orientation="horizontal"
+            android:textColorHint="@android:color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/TinputLayMPPTmenor">
+
+            <EditText
+                android:id="@+id/et_maiorMPPT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textView10"
+                android:layout_alignBottom="@+id/textView10"
+                android:layout_toEndOf="@+id/textView10"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="@string/_300_v"
+                android:inputType="textPersonName|numberDecimal"
+                android:labelFor="@+id/idmaiorVMPPT"
+                android:textAlignment="center"
+                android:textColor="@android:color/holo_green_dark"
+                tools:layout_editor_absoluteX="32dp"
+                tools:layout_editor_absoluteY="257dp" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/TinputLayCoefiMPPT"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="16dp"
+            android:hint="@string/Coe_txt_MPPT"
+            android:orientation="horizontal"
+            android:textColorHint="@android:color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/TinputLayMaiorMPPT">
+
+            <EditText
+                android:id="@+id/id_coefi_MPPT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textView11"
+                android:layout_alignBottom="@+id/textView11"
+                android:layout_toEndOf="@+id/textView11"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="number"
+                android:labelFor="@+id/id_coefi_MPPT"
+                android:textAlignment="center"
+                android:textColor="@android:color/holo_green_dark"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="309dp" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/TinputLayCorrenteMax"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="16dp"
+            android:hint="@string/corre_txt_max_string"
+            android:orientation="horizontal"
+            android:textColorHint="@android:color/black"
+            app:layout_constraintBottom_toTopOf="@+id/idvoltar_main_inv"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/TinputLayCoefiMPPT"
+            app:layout_constraintVertical_bias="0.187">
+
+            <EditText
+                android:id="@+id/IdcorrenteMaxStr"
+                android:layout_width="370dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textView15"
+                android:layout_alignBottom="@+id/textView15"
+                android:layout_toEndOf="@+id/textView15"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:labelFor="@+id/IdcorrenteMaxStr"
+                android:textAlignment="center"
+                android:textColor="@android:color/holo_green_dark"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="399dp" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.84" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline17"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/inversor"
+            android:contentDescription="@string/todo" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5" />
+
+    </android.support.constraint.ConstraintLayout>
 </ScrollView>

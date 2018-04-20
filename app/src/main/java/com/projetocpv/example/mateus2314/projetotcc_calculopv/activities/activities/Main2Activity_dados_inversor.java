@@ -19,11 +19,7 @@ public class Main2Activity_dados_inversor extends AppCompatActivity {
     private EditText MPPTmenorV;
     private EditText MPPTmaiorV;
     private EditText Coef_MPPT;
-    private EditText Fat_pot_inv;
-    private EditText THD_inv;
-    private EditText Vmaxcc;
     private EditText Imaxstring;
-    private EditText Freqrede;
     private Button seguir3act;
     private Button volta1act;
 
@@ -43,13 +39,9 @@ public class Main2Activity_dados_inversor extends AppCompatActivity {
         MPPTmenorV = (EditText) findViewById(R.id.idmenor_mppt);
         MPPTmaiorV = (EditText) findViewById(R.id.idmaiorVMPPT);
         Coef_MPPT = (EditText) findViewById(R.id.id_coefi_MPPT);
-        Fat_pot_inv = (EditText) findViewById(R.id.Id_fator_pot);
-        THD_inv = (EditText) findViewById(R.id.id_THD);
-        Vmaxcc = (EditText) findViewById(R.id.idVmaxcc);
         Imaxstring = (EditText) findViewById(R.id.IdcorrenteMaxStr);
-        Freqrede = (EditText) findViewById(R.id.idFreqRede);
-        seguir3act = (Button) findViewById(R.id.idbuttonseguiact3);
-        volta1act = (Button) findViewById(R.id.idvoltar);
+        seguir3act = (Button) findViewById(R.id.bt_inversor2);
+        volta1act = (Button) findViewById(R.id.idvoltar_main_inv);
 
         volta1act.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -67,17 +59,12 @@ public class Main2Activity_dados_inversor extends AppCompatActivity {
                 String MPPTmenorVPV = MPPTmenorV.getText().toString();
                 String MPPTmaiorVPV = MPPTmaiorV.getText().toString();
                 String Coef_MPPTPV = Coef_MPPT.getText().toString();
-                String Fat_pot_invPV = Fat_pot_inv.getText().toString();
-                String THD_invPV = THD_inv.getText().toString();
-                String VmaxccPV = Vmaxcc.getText().toString();
                 String ImaxstringPV = Imaxstring.getText().toString();
-                String FreqredePV = Freqrede.getText().toString();
                 String seguir3actPV = seguir3act.getText().toString();
                 String volta1actPV = volta1act.getText().toString();
                 if (modeloInversoPV.isEmpty() || potnomInvPV.isEmpty() || numMPPTTrackersPV.isEmpty()||
                         MPPTmenorVPV.isEmpty() || MPPTmaiorVPV.isEmpty() || Coef_MPPTPV.isEmpty()||
-                        Fat_pot_invPV.isEmpty() || THD_invPV.isEmpty() || VmaxccPV.isEmpty() ||
-                        ImaxstringPV.isEmpty() || FreqredePV.isEmpty() || seguir3actPV.isEmpty()||
+                        ImaxstringPV.isEmpty() || seguir3actPV.isEmpty()||
                         volta1actPV.isEmpty()){
                     Toast.makeText(Main2Activity_dados_inversor.this,"Preencha os dados pedidos",Toast.LENGTH_LONG).show();
                 }else {
@@ -86,11 +73,6 @@ public class Main2Activity_dados_inversor extends AppCompatActivity {
                     Float MPPTMenor_float = Float.parseFloat(MPPTmenorVPV);
                     Float MPPTMaior_float = Float.parseFloat(MPPTmaiorVPV);
                     Float Coef_MPPT_float = Float.parseFloat(Coef_MPPTPV);
-                    Float Fat_pot_inv_float = Float.parseFloat(Fat_pot_invPV);
-                    Float THD_invPV_float = Float.parseFloat(THD_invPV);
-                    Float VmaxccPV_float = Float.parseFloat(VmaxccPV);
-                    Float Imaxsttring_float = Float.parseFloat(VmaxccPV);
-                    Float Freqrede_float = Float.parseFloat(FreqredePV);
                     startActivity(new Intent(Main2Activity_dados_inversor.this,Main3Activityinversor.class));
                 }
 

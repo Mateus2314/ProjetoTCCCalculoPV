@@ -70,6 +70,8 @@
     <string name="txtButtonCadastroModulosSolares">Paineis</string>
     <string name="logocerf">LogoCERF</string>
     <string name="todo">TODO</string>
+    <string name="modelo_do_inversor">Modelo do inversor</string>
+    <string name="bt_inversor">bt inversor</string>
     <string-array name="modulosSolares">
         <item>225 wp</item>
         <item>275 wp</item>

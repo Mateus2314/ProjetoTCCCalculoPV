@@ -38,20 +38,20 @@ public class MainActivity extends AppCompatActivity {
 
     /* Cadastro do usuario */
 
-    public void inversor(View view) {
+    public void funcao_inversores(View view) {
         try {
             db = new Database(this);
             db.open();
             String nome = et_nome.getText().toString();
             String email = et_email.getText().toString();
-            String contaEner = et_contaener.getText().toString();
+            String contEne = et_contaener.getText().toString();
 
 
-            if (nome.isEmpty() || email.isEmpty() || contaEner.isEmpty()) {
+            if (nome.isEmpty() || email.isEmpty() || contEne.isEmpty()) {
                 Toast.makeText(this,"Preencha todo os campos...",Toast.LENGTH_SHORT).show();
             }else {
 
-               boolean isOk = Database.usuarioDao.save(new Usuario(nome, email, contaEner));
+               boolean isOk = Database.usuarioDao.save(new Usuario(nome, email, contEne));
                if (isOk){
 
                    Toast.makeText(this, "Cadastrado com sucesso!", Toast.LENGTH_SHORT).show();
@@ -139,7 +139,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void findViews() {
         et_nome = (EditText) findViewById(R.id.editTxtNome);
-        et_contaener = (EditText) findViewById(R.id.EditTxtContaLuz);
+        et_contaener = (EditText) findViewById(R.id.et_contaener);
         et_email = (EditText) findViewById(R.id.et_EmailAct1);
 
 
