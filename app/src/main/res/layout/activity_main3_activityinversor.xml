@@ -4,347 +4,253 @@
     android:layout_height="match_parent"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="com.projetocpv.example.mateus2314.projetotcc_calculopv.activities.activities.Main2Activity_dados_inversor"
+    tools:context="com.projetocpv.example.mateus2314.projetotcc_calculopv.activities.activities.Main3Activityinversor"
     android:fillViewport="true">
 
 
-    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@android:color/holo_blue_dark"
+        android:padding="16dp"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:background="@android:color/background_light"
         android:theme="@style/Base.Theme.AppCompat">
 
         <TextView
-            android:id="@+id/titulo_rend_inv_2"
-            android:layout_width="201dp"
-            android:layout_height="31dp"
-            android:layout_marginBottom="32dp"
-            android:layout_marginTop="54dp"
-            android:contentDescription="@string/efi_inv"
-            android:layerType="software"
-            android:scrollbars="none"
-            android:text="@string/efici_inv_1"
-            android:textAllCaps="false"
-            android:textColor="@android:color/black"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            android:visibility="visible"
-            app:layout_constraintBottom_toTopOf="@+id/editTensao_Saida"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <TextView
-            android:id="@+id/titulo_Inv2"
-            android:layout_width="0dp"
-            android:layout_height="32dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginBottom="8dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:contentDescription="@string/titulo_Inv2_des"
+            android:id="@+id/Titulo_inv2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:text="@string/titulo_txt_inv"
-            android:textColor="@android:color/background_light"
-            android:textSize="24sp"
-            app:layout_constraintBottom_toTopOf="@+id/titulo_rend_inv_2"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/guideline"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <EditText
-            android:id="@+id/edit_rend_inv"
-            android:layout_width="0dp"
-            android:layout_height="28dp"
-            android:background="@android:color/darker_gray"
-            android:ems="10"
-            android:hint="@string/_19"
-            android:inputType="numberDecimal"
-            android:selectAllOnFocus="false"
-            android:singleLine="false"
             android:textAlignment="center"
-            android:textColor="@android:color/holo_green_dark"
-            android:textSize="18sp"
-            app:layout_constraintBaseline_toBaselineOf="@+id/titulo_rend_inv_2"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toEndOf="@+id/titulo_rend_inv_2" />
-
-        <EditText
-            android:id="@+id/editTensao_Saida"
-            android:layout_width="0dp"
-            android:layout_height="29dp"
-            android:background="@android:color/darker_gray"
-            android:ems="10"
-            android:hint="@string/_30V"
-            android:inputType="numberDecimal"
-            android:selectAllOnFocus="false"
-            android:singleLine="false"
-            android:textAlignment="center"
-            android:textColor="@android:color/holo_green_dark"
-            android:textSize="18sp"
-            app:layout_constraintBaseline_toBaselineOf="@+id/tex_tens_said"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toEndOf="@+id/tex_tens_said" />
-
-        <EditText
-            android:id="@+id/editCorrente_Saida"
-            android:layout_width="0dp"
-            android:layout_height="29dp"
-            android:background="@android:color/darker_gray"
-            android:ems="10"
-            android:hint="@string/_9_a"
-            android:inputType="numberDecimal"
-            android:selectAllOnFocus="false"
-            android:singleLine="false"
-            android:textAlignment="center"
-            android:textColor="@android:color/holo_green_dark"
-            android:textSize="18sp"
-            app:layout_constraintBaseline_toBaselineOf="@+id/tex_corrente_said2"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/tex_corrente_said2" />
-
-        <EditText
-            android:id="@+id/editPeso_Inv"
-            android:layout_width="0dp"
-            android:layout_height="29dp"
-            android:background="@android:color/darker_gray"
-            android:ems="10"
-            android:hint="@string/_20_kg"
-            android:inputType="numberDecimal"
-            android:selectAllOnFocus="false"
-            android:singleLine="false"
-            android:textAlignment="center"
-            android:textColor="@android:color/holo_green_dark"
-            android:textSize="18sp"
-            app:layout_constraintBaseline_toBaselineOf="@+id/Tex_peso_inv"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.714"
-            app:layout_constraintStart_toEndOf="@+id/Tex_peso_inv" />
-
-        <EditText
-            android:id="@+id/editArea_Inv"
-            android:layout_width="0dp"
-            android:layout_height="29dp"
-            android:background="@android:color/darker_gray"
-            android:ems="10"
-            android:hint="@string/_1_m"
-            android:inputType="numberDecimal"
-            android:selectAllOnFocus="false"
-            android:singleLine="false"
-            android:textAlignment="center"
-            android:textColor="@android:color/holo_green_dark"
-            android:textSize="18sp"
-            app:layout_constraintBaseline_toBaselineOf="@+id/tex_area_inv"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/tex_area_inv" />
-
-        <EditText
-            android:id="@+id/edit_Garantia_Inv"
-            android:layout_width="0dp"
-            android:layout_height="29dp"
-            android:background="@android:color/darker_gray"
-            android:ems="10"
-            android:hint="@string/_10_anos"
-            android:inputType="numberDecimal"
-            android:selectAllOnFocus="false"
-            android:singleLine="false"
-            android:textAlignment="center"
-            android:textColor="@android:color/holo_green_dark"
-            android:textSize="18sp"
-            app:layout_constraintBaseline_toBaselineOf="@+id/tex_garantia_preco"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/tex_garantia_preco" />
-
-        <EditText
-            android:id="@+id/edit_Preco_Inv"
-            android:layout_width="0dp"
-            android:layout_height="29dp"
-            android:background="@android:color/darker_gray"
-            android:ems="10"
-            android:hint="@string/r_2000_00"
-            android:inputType="numberDecimal"
-            android:selectAllOnFocus="false"
-            android:singleLine="false"
-            android:textAlignment="center"
-            android:textColor="@android:color/holo_green_dark"
-            android:textSize="18sp"
-            app:layout_constraintBaseline_toBaselineOf="@+id/tex_preco_inv"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/tex_preco_inv" />
-
-        <android.support.constraint.Guideline
-            android:id="@+id/guideline"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="11dp"
-            android:layout_marginEnd="7dp"
-            android:layout_marginTop="42dp"
-            android:orientation="horizontal"
-            app:layout_constraintBottom_toTopOf="@+id/titulo_rend_inv_2"
-            app:layout_constraintEnd_toStartOf="@+id/titulo_Inv2"
-            app:layout_constraintGuide_percent="0.08219178"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <android.support.constraint.Guideline
-            android:id="@+id/guideline2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="414dp"
-            android:orientation="horizontal"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintGuide_begin="81dp"
-            app:layout_constraintTop_toBottomOf="@+id/titulo_rend_inv_2" />
-
-        <TextView
-            android:id="@+id/tex_tens_said"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
-            android:contentDescription="@string/tensao_Saida_texto"
-            android:layerType="software"
-            android:text="@string/tensao_Saida_texto"
             android:textColor="@android:color/black"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            android:visibility="visible"
-            app:layout_constraintBottom_toTopOf="@+id/editCorrente_Saida"
-            app:layout_constraintStart_toStartOf="parent" />
+            android:textSize="30sp" />
 
-        <TextView
-            android:id="@+id/tex_corrente_said2"
-            android:layout_width="0dp"
-            android:layout_height="24dp"
-            android:layout_marginBottom="8dp"
-            android:layout_marginTop="8dp"
-            android:contentDescription="@string/corrente_Saida_texto"
-            android:layerType="software"
-            android:text="@string/corrente_Saida_texto"
-            android:textAlignment="viewStart"
-            android:textColor="@android:color/black"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            android:visibility="visible"
-            app:layout_constraintBottom_toTopOf="@+id/editPeso_Inv"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/guideline3" />
-
-        <TextView
-            android:id="@+id/Tex_peso_inv"
-            android:layout_width="0dp"
-            android:layout_height="24dp"
-            android:layout_marginBottom="8dp"
-            android:layout_marginTop="16dp"
-            android:contentDescription="@string/corrente_Saida_texto"
-            android:layerType="software"
-            android:text="@string/text_Peso_Inv"
-            android:textAlignment="viewStart"
-            android:textColor="@android:color/black"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            android:visibility="visible"
-            app:layout_constraintBottom_toTopOf="@+id/editArea_Inv"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tex_corrente_said2" />
-
-        <TextView
-            android:id="@+id/tex_area_inv"
-            android:layout_width="0dp"
-            android:layout_height="24dp"
-            android:layout_marginTop="16dp"
-            android:contentDescription="@string/corrente_Saida_texto"
-            android:layerType="software"
-            android:text="@string/text_Area_inv"
-            android:textAlignment="viewStart"
-            android:textColor="@android:color/black"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            android:visibility="visible"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/Tex_peso_inv" />
-
-        <TextView
-            android:id="@+id/tex_garantia_preco"
-            android:layout_width="0dp"
-            android:layout_height="24dp"
-            android:layout_marginBottom="8dp"
-            android:layout_marginTop="16dp"
-            android:contentDescription="@string/corrente_Saida_texto"
-            android:layerType="software"
-            android:text="@string/text_Garantia_preco"
-            android:textAlignment="viewStart"
-            android:textColor="@android:color/black"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            android:visibility="visible"
-            app:layout_constraintBottom_toTopOf="@+id/edit_Preco_Inv"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tex_area_inv" />
-
-        <TextView
-            android:id="@+id/tex_preco_inv"
-            android:layout_width="0dp"
-            android:layout_height="24dp"
-            android:layout_marginBottom="110dp"
-            android:layout_marginTop="16dp"
-            android:contentDescription="@string/corrente_Saida_texto"
-            android:layerType="software"
-            android:text="@string/text_preco_inv"
-            android:textAlignment="viewStart"
-            android:textColor="@android:color/black"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            android:visibility="visible"
-            app:layout_constraintBottom_toTopOf="@+id/idbuttonVoltaract2"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tex_garantia_preco" />
-
-        <android.support.constraint.Guideline
-            android:id="@+id/guideline3"
-            android:layout_width="wrap_content"
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/TextInputLayrend_Inv"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="377dp"
-            android:orientation="horizontal"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintGuide_percent="0.26"
-            app:layout_constraintTop_toBottomOf="@+id/titulo_rend_inv_2" />
+            android:hint="@string/efi_inv"
+            android:textColorHint="@android:color/black">
 
-        <android.support.constraint.Guideline
-            android:id="@+id/guideline4"
-            android:layout_width="wrap_content"
+            <EditText
+                android:id="@+id/edit_rend_inv"
+                android:layout_width="match_parent"
+                android:layout_height="28dp"
+                android:layout_weight="1"
+                android:background="@android:color/background_light"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:selectAllOnFocus="false"
+                android:singleLine="false"
+                android:textAlignment="center"
+                android:textColor="@android:color/holo_green_dark"
+                android:textSize="18sp"
+                app:layout_constraintBaseline_toBaselineOf="@+id/titulo_rend_inv_2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/titulo_rend_inv_2" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/TextInputLayTensao_Saida"
+            android:layout_width="354dp"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="85dp"
-            android:orientation="horizontal"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintGuide_begin="425dp"
-            app:layout_constraintTop_toBottomOf="@+id/titulo_rend_inv_2" />
+            android:hint="@string/tensao_Saida_texto"
+            android:textColorHint="@android:color/black">
 
-        <Button
-            android:id="@+id/idbuttonVoltaract2"
-            android:layout_width="wrap_content"
+            <EditText
+                android:id="@+id/editTensao_Saida"
+                android:layout_width="344dp"
+                android:layout_height="26dp"
+                android:layout_weight="1"
+                android:background="@android:color/background_light"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:selectAllOnFocus="false"
+                android:singleLine="false"
+                android:textAlignment="center"
+                android:textColor="@android:color/holo_green_dark"
+                android:textSize="18sp"
+                app:layout_constraintBaseline_toBaselineOf="@+id/tex_tens_said"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/tex_tens_said" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/TextInputLayPeso_Inv"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:contentDescription="@string/voltar_txt_act1"
-            android:text="@string/voltar_txt_act1"
-            app:layout_constraintBaseline_toBaselineOf="@+id/idbuttonSeguirAct4"
-            app:layout_constraintStart_toStartOf="parent" />
+            android:hint="@string/text_Peso_Inv"
+            android:textColorHint="@android:color/black">
 
-        <Button
-            android:id="@+id/idbuttonSeguirAct4"
-            android:layout_width="wrap_content"
+            <EditText
+                android:id="@+id/editPeso_Inv"
+                android:layout_width="324dp"
+                android:layout_height="29dp"
+                android:layout_weight="1"
+                android:background="@android:color/background_light"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:selectAllOnFocus="false"
+                android:singleLine="false"
+                android:textAlignment="center"
+                android:textColor="@android:color/holo_green_dark"
+                android:textSize="18sp"
+                app:layout_constraintBaseline_toBaselineOf="@+id/Tex_peso_inv"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.714"
+                app:layout_constraintStart_toEndOf="@+id/Tex_peso_inv" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/TextInputLayArea_Inv"
+            android:layout_width="350dp"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginTop="8dp"
-            android:contentDescription="@string/seguir_txt_2"
-            android:text="@string/seguir_txt_2"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/guideline4" />
+            android:hint="@string/text_Area_inv"
+            android:textColorHint="@android:color/black">
 
-    </android.support.constraint.ConstraintLayout>
+            <EditText
+                android:id="@+id/editArea_Inv"
+                android:layout_width="358dp"
+                android:layout_height="29dp"
+                android:layout_weight="1"
+                android:background="@android:color/background_light"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:selectAllOnFocus="false"
+                android:singleLine="false"
+                android:textAlignment="center"
+                android:textColor="@android:color/holo_green_dark"
+                android:textColorHint="@android:color/black"
+                android:textSize="18sp"
+                app:layout_constraintBaseline_toBaselineOf="@+id/tex_area_inv"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/tex_area_inv" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/TextInputLayCorrentSaida"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/corrente_Saida_texto"
+            android:textColorHint="@android:color/black">
+
+            <EditText
+                android:id="@+id/editCorrente_Saida"
+                android:layout_width="match_parent"
+                android:layout_height="29dp"
+                android:layout_weight="1"
+                android:background="@android:color/background_light"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:selectAllOnFocus="false"
+                android:singleLine="false"
+                android:textAlignment="center"
+                android:textColor="@android:color/holo_green_dark"
+                android:textSize="18sp"
+                app:layout_constraintBaseline_toBaselineOf="@+id/tex_corrente_said2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/tex_corrente_said2" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/TextInputLayGarantia_Inv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/text_Garantia_preco"
+            android:textColorHint="@android:color/black">
+
+            <EditText
+                android:id="@+id/edit_Garantia_Inv"
+                android:layout_width="338dp"
+                android:layout_height="29dp"
+                android:layout_weight="1"
+                android:background="@android:color/background_light"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:selectAllOnFocus="false"
+                android:singleLine="false"
+                android:textAlignment="center"
+                android:textColor="@android:color/holo_green_dark"
+                android:textSize="18sp"
+                app:layout_constraintBaseline_toBaselineOf="@+id/tex_garantia_preco"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/tex_garantia_preco" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/TextInputLayPreco_Inv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/text_preco_inv"
+            android:textColorHint="@android:color/background_dark">
+
+            <EditText
+                android:id="@+id/edit_Preco_Inv"
+                android:layout_width="match_parent"
+                android:layout_height="29dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:selectAllOnFocus="false"
+                android:singleLine="false"
+                android:textAlignment="center"
+                android:textColor="@android:color/holo_green_dark"
+                android:textSize="18sp"
+                app:layout_constraintBaseline_toBaselineOf="@+id/tex_preco_inv"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/tex_preco_inv" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/idbuttonVoltaract2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:contentDescription="@string/voltar_txt_act1"
+                android:text="@string/voltar_txt_act1"
+                app:layout_constraintBottom_toTopOf="@+id/guideline4"
+                app:layout_constraintEnd_toStartOf="@+id/guideline26"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/guideline4" />
+
+            <Button
+                android:id="@+id/idbuttonSeguirAct4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:contentDescription="@string/seguir_txt_2"
+                android:text="@string/salvar_dados"
+                app:layout_constraintBottom_toTopOf="@+id/guideline4"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/guideline26"
+                app:layout_constraintTop_toTopOf="@+id/guideline4"
+                app:layout_constraintVertical_bias="0.571" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="match_parent"
+            android:layout_height="148dp"
+            android:contentDescription="@string/imageminv"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/inversor" />
+
+    </LinearLayout>
 
 </ScrollView>

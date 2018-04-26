@@ -35,4 +35,6 @@
     <string name="todo">TODO</string>
     <string name="modelo_do_inversor">Modelo do inversor</string>
     <string name="bt_inversor">bt inversor</string>
+    <string name="imageminv">imagemInv</string>
+    <string name="salvar_dados">Salvar dados</string>
 </resources>

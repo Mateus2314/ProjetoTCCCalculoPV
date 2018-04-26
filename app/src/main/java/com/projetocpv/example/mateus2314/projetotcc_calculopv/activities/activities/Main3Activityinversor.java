@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -27,6 +28,13 @@ public class Main3Activityinversor extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main3_activityinversor);
+
+        // Impede que o teclado não abra assim que entrar a na tela
+
+        this.getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN);
+
+
+
 
         Rend_inv = (EditText)findViewById(R.id.edit_rend_inv);
         Tensao_Saida = (EditText)findViewById(R.id.editTensao_Saida);

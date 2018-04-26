@@ -60,12 +60,9 @@ public class Main2Activity_dados_inversor extends AppCompatActivity {
                 String MPPTmaiorVPV = MPPTmaiorV.getText().toString();
                 String Coef_MPPTPV = Coef_MPPT.getText().toString();
                 String ImaxstringPV = Imaxstring.getText().toString();
-                String seguir3actPV = seguir3act.getText().toString();
-                String volta1actPV = volta1act.getText().toString();
                 if (modeloInversoPV.isEmpty() || potnomInvPV.isEmpty() || numMPPTTrackersPV.isEmpty()||
                         MPPTmenorVPV.isEmpty() || MPPTmaiorVPV.isEmpty() || Coef_MPPTPV.isEmpty()||
-                        ImaxstringPV.isEmpty() || seguir3actPV.isEmpty()||
-                        volta1actPV.isEmpty()){
+                        ImaxstringPV.isEmpty()){
                     Toast.makeText(Main2Activity_dados_inversor.this,"Preencha os dados pedidos",Toast.LENGTH_LONG).show();
                 }else {
                     Float potnomInv_float = Float.parseFloat(potnomInvPV);
@@ -73,7 +70,18 @@ public class Main2Activity_dados_inversor extends AppCompatActivity {
                     Float MPPTMenor_float = Float.parseFloat(MPPTmenorVPV);
                     Float MPPTMaior_float = Float.parseFloat(MPPTmaiorVPV);
                     Float Coef_MPPT_float = Float.parseFloat(Coef_MPPTPV);
-                    startActivity(new Intent(Main2Activity_dados_inversor.this,Main3Activityinversor.class));
+                    Float Imaxstring_float = Float.parseFloat(ImaxstringPV);
+                    Intent intent = new Intent(Main2Activity_dados_inversor.this, Main3Activityinversor.class);
+
+                    intent.putExtra("modeloInvPV", modeloInversoPV);
+                    intent.putExtra("potnomInvPV",potnomInv_float);
+                    intent.putExtra("numMPPTTrackers",numMPPTTrackers_float);
+                    intent.putExtra("MpptMenorIv",MPPTMenor_float);
+                    intent.putExtra("MpptMaiorInv",MPPTMaior_float);
+                    intent.putExtra("CoefMPPT",Coef_MPPT_float);
+                    intent.putExtra("ImaxstringPV", Imaxstring_float);
+
+                    startActivity(intent);
                 }
 
             }
