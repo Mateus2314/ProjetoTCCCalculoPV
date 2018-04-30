@@ -52,6 +52,7 @@ public class MainActivity extends AppCompatActivity {
             }else {
 
                boolean isOk = Database.usuarioDao.save(new Usuario(nome, email, contEne));
+
                if (isOk){
 
                    Toast.makeText(this, "Cadastrado com sucesso!", Toast.LENGTH_SHORT).show();

@@ -64,6 +64,8 @@ public class Main2Activity_dados_inversor extends AppCompatActivity {
                 String PontenciaMaxEntradaPV = et_PotenciaMaxEntrada_inv.getText().toString();
                 String TensaoMaximaCASaidaPV = et_TensaoMaximaCASaida.getText().toString();
                 String TensaoFaseNeutroPV = et_TensaoFaseNeutro.getText().toString();
+
+
                 if (modelInversePV.isEmpty() || potnomInvPV.isEmpty() || numMPPTTrackersPV.isEmpty()||
                         MPPTmenorVPV.isEmpty() || MPPTmaiorVPV.isEmpty() || Coef_MPPTPV.isEmpty()||
                         ImaxstringPV.isEmpty()|| rendimentoInvPV.isEmpty() || PontenciaMaxEntradaPV.isEmpty()
@@ -72,6 +74,7 @@ public class Main2Activity_dados_inversor extends AppCompatActivity {
                 }else {
                     boolean isOk = Database.inversorDao.save(new Inversor(modelInversePV, potnomInvPV, numMPPTTrackersPV, MPPTmaiorVPV, MPPTmenorVPV, Coef_MPPTPV, ImaxstringPV,
                             rendimentoInvPV, PontenciaMaxEntradaPV, TensaoMaximaCASaidaPV, TensaoFaseNeutroPV));
+
                     if (isOk){
                         Toast.makeText(this, "Cadastro com sucesso!", Toast.LENGTH_LONG).show();
                         Intent intent = new Intent(this, MainActivity.class);
@@ -84,7 +87,7 @@ public class Main2Activity_dados_inversor extends AppCompatActivity {
 
             }catch (Exception e){
                 e.printStackTrace();
-                Toast.makeText(this,"Falha ao cadastrar inversor!",Toast.LENGTH_LONG).show();
+                Toast.makeText(this,"Falha ao cadastrar inversor! aqui 2",Toast.LENGTH_LONG).show();
             }finally {
                 db.close();
             }
