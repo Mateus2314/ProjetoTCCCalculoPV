@@ -1,0 +1,34 @@
+Inversores:
+
+Modelo do inversor; < ------------------ok----
+Pontecia nominal; <---------------------ok----
+Tensão Vmpp Max; <----------------------ok------
+Tensão Vmpp min;  <---------------------ok------
+Coeficiente VmppT; <--------------------ok------
+Corrente máxima de entrada; <------------ok-----
+Eficiência média do Inversor(rendimento europeu)-------
+Potência máxima CC de entrada;-------
+String/entrada; <----------------------ok--------
+Max|saida AC;-----
+Niveis de tensão Fase-neutro;-----
+
+--------------------------------------------------------------------------
+
+Modelo_inv       ok
+PontenciaNominal ok
+TensaoVmppMax    ok
+TensaoVmppMin    ok
+Coefi_Mppt       ok
+CorrenteMaxEntrada ok
+Eficiencia_med    ok
+PotMaxCCentrada  ok
+StringEntrada    ok
+TensaoMaxSaidaAC ok
+TensaoFaseNeutro ok
+
+
+
+
+
+
+

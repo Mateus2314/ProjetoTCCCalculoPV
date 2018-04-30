@@ -99,11 +99,11 @@ public class Main2Activity_dados_inversor extends AppCompatActivity {
 
     private  void findViews(){
 
-        et_modeloInversor = (EditText) findViewById(R.id.idModInver);
+        et_modeloInversor = (EditText) findViewById(R.id.et_modelo_inversor);
         et_potnomInv = (EditText) findViewById(R.id.id_pot_nominal);
         et_numMPPTTrackers = (EditText) findViewById(R.id.idnumTracMPPT);
         et_MPPTmenorV = (EditText) findViewById(R.id.idmenor_mppt);
-        et_MPPTmaiorV = (EditText) findViewById(R.id.idmaiorVMPPT);
+        et_MPPTmaiorV = (EditText) findViewById(R.id.et_maiorMPPT);
         et_Coef_MPPT = (EditText) findViewById(R.id.id_coefi_MPPT);
         et_Imaxstring = (EditText) findViewById(R.id.IdcorrenteMaxStr);
         et_efic_rend_inv = (EditText) findViewById(R.id.edit_rend_inv);
