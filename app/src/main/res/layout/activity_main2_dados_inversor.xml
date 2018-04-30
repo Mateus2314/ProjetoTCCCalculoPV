@@ -8,18 +8,40 @@
     android:fillViewport="true"
     android:theme="@style/Base.Theme.AppCompat">
 
-    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
 
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:background="@android:color/background_light"
+        android:theme="@style/Base.Theme.AppCompat"
+        >
 
+
+        <EditText
+            android:id="@+id/editTensao_Saida2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@android:color/background_light"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:selectAllOnFocus="false"
+            android:singleLine="false"
+            android:textAlignment="center"
+            android:textColor="@android:color/holo_green_dark"
+            android:textSize="18sp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/tex_tens_said"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/tex_tens_said" />
 
         <TextView
             android:id="@+id/textView5"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
+            android:layout_width="371dp"
+            android:layout_height="wrap_content"
             android:text="@string/titulo_txt_inv"
             android:textAlignment="center"
             android:textColor="@android:color/black"
@@ -31,43 +53,10 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.0" />
 
-        <Button
-            android:id="@+id/bt_inversor2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/idFreqRede"
-            android:layout_marginEnd="8dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:layout_toEndOf="@+id/textView15"
-            android:contentDescription="@string/bt_inversor"
-            android:text="@string/seguir_txt_2"
-            app:layout_constraintBottom_toTopOf="@+id/guideline17"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="@+id/guideline18"
-            app:layout_constraintTop_toTopOf="@+id/guideline17"
-            tools:ignore="UnknownId" />
-
-        <Button
-            android:id="@+id/idvoltar_main_inv"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_below="@+id/textView16"
-            android:layout_marginEnd="8dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:text="@string/voltar_txt_act1"
-            app:layout_constraintBottom_toTopOf="@+id/guideline17"
-            app:layout_constraintEnd_toStartOf="@+id/guideline18"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/guideline17"
-            tools:ignore="UnknownId" />
-
         <android.support.design.widget.TextInputLayout
             android:id="@+id/TinputLayModeloInver"
-            android:layout_width="0dp"
-            android:layout_height="35dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
             android:layout_marginTop="16dp"
             android:hint="@string/Md_txt_inv"
@@ -81,7 +70,7 @@
             <EditText
                 android:id="@+id/et_modelo_inversor"
                 android:layout_width="match_parent"
-                android:layout_height="34dp"
+                android:layout_height="wrap_content"
                 android:layout_alignBaseline="@+id/textView6"
                 android:layout_alignBottom="@+id/textView6"
                 android:layout_alignParentEnd="true"
@@ -100,8 +89,8 @@
 
         <android.support.design.widget.TextInputLayout
             android:id="@+id/TinputLayPotNominal"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:hint="@string/pot_txt_nom"
             android:orientation="horizontal"
             android:textColorHint="@android:color/black"
@@ -114,7 +103,7 @@
             <EditText
                 android:id="@+id/id_pot_nominal"
                 android:layout_width="match_parent"
-                android:layout_height="39dp"
+                android:layout_height="wrap_content"
                 android:layout_alignBaseline="@+id/textView7"
                 android:layout_alignBottom="@+id/textView7"
                 android:layout_toEndOf="@+id/textView7"
@@ -130,71 +119,9 @@
         </android.support.design.widget.TextInputLayout>
 
         <android.support.design.widget.TextInputLayout
-            android:id="@+id/TinputLayMPPTmenor"
-            android:layout_width="0dp"
-            android:layout_height="38dp"
-            android:hint="@string/txt_menor_mppt"
-            android:orientation="horizontal"
-            android:textColorHint="@android:color/black"
-            app:layout_constraintBottom_toTopOf="@+id/guideline23"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/guideline22">
-
-            <EditText
-                android:id="@+id/idmenor_mppt"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_alignTop="@+id/textView9"
-                android:layout_toEndOf="@+id/textView9"
-                android:layout_weight="1"
-                android:ems="10"
-                android:inputType="textPersonName|numberDecimal"
-                android:labelFor="@+id/idmenor_mppt"
-                android:textAlignment="center"
-                android:textColor="@android:color/holo_green_dark"
-                tools:layout_editor_absoluteX="0dp"
-                tools:layout_editor_absoluteY="143dp" />
-
-        </android.support.design.widget.TextInputLayout>
-
-        <android.support.design.widget.TextInputLayout
-            android:id="@+id/TinputLayNumTracMPPT"
-            android:layout_width="0dp"
-            android:layout_height="38dp"
-            android:hint="@string/num_txt_mppt_trac"
-            android:orientation="horizontal"
-            android:textColorHint="@android:color/black"
-            app:layout_constraintBottom_toTopOf="@+id/guideline22"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/guideline20"
-            app:layout_constraintVertical_bias="0.0">
-
-            <EditText
-                android:id="@+id/idnumTracMPPT"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_alignBaseline="@+id/textView8"
-                android:layout_alignBottom="@+id/textView8"
-                android:layout_toEndOf="@+id/textView8"
-                android:layout_weight="1"
-                android:ems="10"
-                android:inputType="number"
-                android:labelFor="@+id/idnumTracMPPT"
-                android:textAlignment="center"
-                android:textColor="@android:color/holo_green_dark"
-                tools:layout_editor_absoluteX="0dp"
-                tools:layout_editor_absoluteY="159dp" />
-
-        </android.support.design.widget.TextInputLayout>
-
-        <android.support.design.widget.TextInputLayout
             android:id="@+id/TinputLayMaiorMPPT"
-            android:layout_width="0dp"
-            android:layout_height="43dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:hint="@string/maior_mppt_txt"
             android:orientation="horizontal"
             android:textColorHint="@android:color/black"
@@ -223,9 +150,39 @@
         </android.support.design.widget.TextInputLayout>
 
         <android.support.design.widget.TextInputLayout
+            android:id="@+id/TinputLayMPPTmenor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/txt_menor_mppt"
+            android:orientation="horizontal"
+            android:textColorHint="@android:color/black"
+            app:layout_constraintBottom_toTopOf="@+id/guideline23"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline22">
+
+            <EditText
+                android:id="@+id/idmenor_mppt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/textView9"
+                android:layout_toEndOf="@+id/textView9"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textPersonName|numberDecimal"
+                android:labelFor="@+id/idmenor_mppt"
+                android:textAlignment="center"
+                android:textColor="@android:color/holo_green_dark"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="143dp" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
             android:id="@+id/TinputLayCoefiMPPT"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:hint="@string/Coe_txt_MPPT"
             android:orientation="horizontal"
@@ -255,8 +212,8 @@
 
         <android.support.design.widget.TextInputLayout
             android:id="@+id/TinputLayCorrenteMax"
-            android:layout_width="0dp"
-            android:layout_height="34dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
             android:layout_marginTop="8dp"
             android:hint="@string/corre_txt_max_string"
@@ -286,17 +243,155 @@
 
         </android.support.design.widget.TextInputLayout>
 
-        <android.support.constraint.Guideline
-            android:id="@+id/guideline17"
-            android:layout_width="wrap_content"
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/TextInputLayrend_Inv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="@string/efi_inv"
+            android:textColorHint="@android:color/black">
+
+            <EditText
+                android:id="@+id/edit_rend_inv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/background_light"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:selectAllOnFocus="false"
+                android:singleLine="false"
+                android:textAlignment="center"
+                android:textColor="@android:color/holo_green_dark"
+                android:textSize="18sp"
+                app:layout_constraintBaseline_toBaselineOf="@+id/titulo_rend_inv_2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/titulo_rend_inv_2" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/TinputLayNumTracMPPT"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:hint="@string/num_txt_mppt_trac"
             android:orientation="horizontal"
-            app:layout_constraintGuide_percent="0.84" />
+            android:textColorHint="@android:color/black"
+            app:layout_constraintBottom_toTopOf="@+id/guideline22"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline20"
+            app:layout_constraintVertical_bias="0.0">
+
+            <EditText
+                android:id="@+id/idnumTracMPPT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textView8"
+                android:layout_alignBottom="@+id/textView8"
+                android:layout_toEndOf="@+id/textView8"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="number"
+                android:labelFor="@+id/idnumTracMPPT"
+                android:textAlignment="center"
+                android:textColor="@android:color/holo_green_dark"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="159dp" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/TextInputLayoutPotMaxEntrada"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/pot_ncia_maxima_de_entrada"
+            android:textColorHint="@android:color/black">
+
+            <EditText
+                android:id="@+id/ed_PotenciaMaxEntraInv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textColor="@android:color/holo_green_dark" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/TextInputLayTensao_Saida"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="@string/tensao_Saida_texto"
+            android:textColorHint="@android:color/black">
+
+            <EditText
+                android:id="@+id/editTensaoMax_SaidaInv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/background_light"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:selectAllOnFocus="false"
+                android:singleLine="false"
+                android:textAlignment="center"
+                android:textColor="@android:color/holo_green_dark"
+                android:textSize="18sp"
+                app:layout_constraintBaseline_toBaselineOf="@+id/tex_tens_said"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/tex_tens_said" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/TextInputLayTensaoFaseNeutro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/tens_o_fase_neutro"
+            android:textColorHint="@android:color/black">
+
+            <EditText
+                android:id="@+id/edTensaoFaseNeutro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textColor="@android:color/holo_green_dark" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/bt_salvarinversor"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                android:onClick="salvarInversores"
+                android:contentDescription="@string/bt_inversor"
+                android:text="@string/salvar_dados"
+                app:layout_constraintBottom_toTopOf="@+id/guideline17"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/guideline18"
+                app:layout_constraintTop_toTopOf="@+id/guideline17"
+                tools:ignore="UnknownId" />
+        </LinearLayout>
 
         <ImageView
             android:id="@+id/imageView2"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
             android:contentDescription="@string/todo"
             android:scaleType="centerCrop"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -307,61 +402,5 @@
             app:layout_constraintVertical_bias="0.0"
             app:srcCompat="@drawable/inversor" />
 
-        <android.support.constraint.Guideline
-            android:id="@+id/guideline18"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            app:layout_constraintGuide_percent="0.5" />
-
-        <android.support.constraint.Guideline
-            android:id="@+id/guideline19"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            app:layout_constraintGuide_percent="0.09" />
-
-        <android.support.constraint.Guideline
-            android:id="@+id/guideline20"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            app:layout_constraintGuide_percent="0.29" />
-
-        <android.support.constraint.Guideline
-            android:id="@+id/guideline21"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            app:layout_constraintGuide_percent="0.19" />
-
-        <android.support.constraint.Guideline
-            android:id="@+id/guideline22"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            app:layout_constraintGuide_begin="174dp" />
-
-        <android.support.constraint.Guideline
-            android:id="@+id/guideline23"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            app:layout_constraintGuide_percent="0.44" />
-
-        <android.support.constraint.Guideline
-            android:id="@+id/guideline24"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            app:layout_constraintGuide_percent="0.58" />
-
-        <android.support.constraint.Guideline
-            android:id="@+id/guideline25"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            app:layout_constraintGuide_percent="0.67" />
-
-    </android.support.constraint.ConstraintLayout>
+    </LinearLayout>
 </ScrollView>

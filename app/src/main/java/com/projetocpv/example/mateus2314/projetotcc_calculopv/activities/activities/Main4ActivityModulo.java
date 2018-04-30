@@ -44,7 +44,7 @@ public class Main4ActivityModulo extends AppCompatActivity {
         ButtonVoltarAct3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(Main4ActivityModulo.this,Main3Activityinversor.class));
+                startActivity(new Intent(Main4ActivityModulo.this,MainActivity.class));
             }
         });
         ButtonSeguirAct5.setOnClickListener(new View.OnClickListener() {

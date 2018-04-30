@@ -17,17 +17,17 @@
     <string name="fator_txt_pot" translatable="false">Fator de potência (%):</string>
     <string name="THD_txt" translatable="false">THD (%):</string>
     <string name="v_cc_txt" translatable="false">Tensão máxima cc (V):</string>
-    <string name="corre_txt_max_string" translatable="false">Corrente maximo por String (A):</string>
+    <string name="corre_txt_max_string" translatable="false">Corrente maxima por String (A):</string>
     <string name="frequencia_txt_rede" translatable="false">Frequencia da rede (Hz):</string>
     <string name="seguir_txt_2" translatable="false">Seguir</string>
     <string name="voltar_txt_act1" translatable="false">Voltar</string>
     <string name="hint_nome_login" translatable="false">Digite o seu nome completo.</string>
     <string name="hint_cont_login" translatable="false">Digite o valor da sua conta de energia em R$:</string>
-    <string name="efi_inv" translatable="false">Digite a eficiencia do inversor</string>
+    <string name="efi_inv" translatable="false">Digite a eficiencia do inversor: </string>
     <string name="titulo_Inv2_des" translatable="false">Informações do Inversor</string>
     <string name="efici_inv_1" translatable="false">Rendimento do inversor:</string>
     <string name="_19" translatable="false">19%</string>
-    <string name="tensao_Saida_texto" translatable="false">Tensão CA de saída :</string>
+    <string name="tensao_Saida_texto" translatable="false">Tensão máxima CA de saída :</string>
     <string name="_30V" translatable="false">30 V</string>
     <string name="renogive" translatable="false">Renogive</string>
     <string name="_3_kw_pico" translatable="false">3 kW(pico)</string>
@@ -74,6 +74,8 @@
     <string name="bt_inversor">bt inversor</string>
     <string name="imageminv">imagemInv</string>
     <string name="salvar_dados">Salvar dados</string>
+    <string name="pot_ncia_maxima_de_entrada">Potência maxima de entrada :</string>
+    <string name="tens_o_fase_neutro">Tensão Fase Neutro :</string>
     <string-array name="modulosSolares">
         <item>225 wp</item>
         <item>275 wp</item>

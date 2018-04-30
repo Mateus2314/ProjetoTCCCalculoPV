@@ -17,7 +17,6 @@
             </intent-filter>
         </activity>
         <activity android:name=".activities.activities.Main2Activity_dados_inversor" />
-        <activity android:name=".activities.activities.Main3Activityinversor" />
         <activity android:name=".activities.activities.Main4ActivityModulo" />
         <activity android:name=".activities.activities.Main5Activity" />
         <activity android:name=".activities.activities.CalculeAgoraInicioActivity"></activity>

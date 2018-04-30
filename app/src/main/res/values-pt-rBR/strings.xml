@@ -37,4 +37,6 @@
     <string name="bt_inversor">bt inversor</string>
     <string name="imageminv">imagemInv</string>
     <string name="salvar_dados">Salvar dados</string>
+    <string name="pot_ncia_maxima_de_entrada">Potência maxima de entrada :</string>
+    <string name="tens_o_fase_neutro">Tensão Fase Neutro :</string>
 </resources>

@@ -4,24 +4,33 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
 import com.projetocpv.example.mateus2314.projetotcc_calculopv.R;
+import com.projetocpv.example.mateus2314.projetotcc_calculopv.activities.database.config.config.Database;
+import com.projetocpv.example.mateus2314.projetotcc_calculopv.activities.model.Inversor;
 
 
 public class Main2Activity_dados_inversor extends AppCompatActivity {
 
-    private EditText modeloInversor;
-    private EditText potnomInv;
-    private EditText numMPPTTrackers;
-    private EditText MPPTmenorV;
-    private EditText MPPTmaiorV;
-    private EditText Coef_MPPT;
-    private EditText Imaxstring;
-    private Button seguir3act;
-    private Button volta1act;
+    private Database db;
+    private EditText et_modeloInversor;
+    private EditText et_potnomInv;
+    private EditText et_numMPPTTrackers;
+    private EditText et_MPPTmenorV;
+    private EditText et_MPPTmaiorV;
+    private EditText et_Coef_MPPT;
+    private EditText et_Imaxstring;
+    private EditText et_efic_rend_inv;
+    private EditText et_PotenciaMaxEntrada_inv;
+    private EditText et_TensaoMaximaCASaida;
+    private EditText et_TensaoFaseNeutro;
+
+   // private Button ;
+   // private Button volta1act;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,63 +38,74 @@ public class Main2Activity_dados_inversor extends AppCompatActivity {
         setContentView(R.layout.activity_main2_dados_inversor);
 
         //Bundle extra = getIntent().getExtras();
-       // if(extra != null){
-       //     String padraoEntrada2 = extra.getString("tipo_entrada");
-       // }
+        // if(extra != null){
+        //     String padraoEntrada2 = extra.getString("tipo_entrada");
+        // }
 
-        modeloInversor = (EditText) findViewById(R.id.idModInver);
-        potnomInv = (EditText) findViewById(R.id.id_pot_nominal);
-        numMPPTTrackers = (EditText) findViewById(R.id.idnumTracMPPT);
-        MPPTmenorV = (EditText) findViewById(R.id.idmenor_mppt);
-        MPPTmaiorV = (EditText) findViewById(R.id.idmaiorVMPPT);
-        Coef_MPPT = (EditText) findViewById(R.id.id_coefi_MPPT);
-        Imaxstring = (EditText) findViewById(R.id.IdcorrenteMaxStr);
-        seguir3act = (Button) findViewById(R.id.bt_inversor2);
-        volta1act = (Button) findViewById(R.id.idvoltar_main_inv);
+        findViews();
 
-        volta1act.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(Main2Activity_dados_inversor.this,MainActivity.class));
-            }
-        });
+        this.getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN);
 
-        seguir3act.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                String modeloInversoPV = modeloInversor.getText().toString();
-                String potnomInvPV = potnomInv.getText().toString();
-                String numMPPTTrackersPV = numMPPTTrackers.getText().toString();
-                String MPPTmenorVPV = MPPTmenorV.getText().toString();
-                String MPPTmaiorVPV = MPPTmaiorV.getText().toString();
-                String Coef_MPPTPV = Coef_MPPT.getText().toString();
-                String ImaxstringPV = Imaxstring.getText().toString();
-                if (modeloInversoPV.isEmpty() || potnomInvPV.isEmpty() || numMPPTTrackersPV.isEmpty()||
+        // cadastro do invesor
+    }
+
+        public void salvarInversores(View view){
+            try {
+                db = new Database(this);
+                db.open();
+                String modelInversePV = et_modeloInversor.getText().toString();
+                String potnomInvPV = et_potnomInv.getText().toString();
+                String numMPPTTrackersPV = et_numMPPTTrackers.getText().toString();
+                String MPPTmenorVPV = et_MPPTmenorV.getText().toString();
+                String MPPTmaiorVPV = et_MPPTmaiorV.getText().toString();
+                String Coef_MPPTPV = et_Coef_MPPT.getText().toString();
+                String ImaxstringPV = et_Imaxstring.getText().toString();
+                String rendimentoInvPV = et_efic_rend_inv.getText().toString();
+                String PontenciaMaxEntradaPV = et_PotenciaMaxEntrada_inv.getText().toString();
+                String TensaoMaximaCASaidaPV = et_TensaoMaximaCASaida.getText().toString();
+                String TensaoFaseNeutroPV = et_TensaoFaseNeutro.getText().toString();
+                if (modelInversePV.isEmpty() || potnomInvPV.isEmpty() || numMPPTTrackersPV.isEmpty()||
                         MPPTmenorVPV.isEmpty() || MPPTmaiorVPV.isEmpty() || Coef_MPPTPV.isEmpty()||
-                        ImaxstringPV.isEmpty()){
-                    Toast.makeText(Main2Activity_dados_inversor.this,"Preencha os dados pedidos",Toast.LENGTH_LONG).show();
+                        ImaxstringPV.isEmpty()|| rendimentoInvPV.isEmpty() || PontenciaMaxEntradaPV.isEmpty()
+                        || TensaoMaximaCASaidaPV.isEmpty() || TensaoFaseNeutroPV.isEmpty()){
+                    Toast.makeText(this, "Preencha todos os campos...",Toast.LENGTH_LONG).show();
                 }else {
-                    Float potnomInv_float = Float.parseFloat(potnomInvPV);
-                    Float numMPPTTrackers_float = Float.parseFloat(numMPPTTrackersPV);
-                    Float MPPTMenor_float = Float.parseFloat(MPPTmenorVPV);
-                    Float MPPTMaior_float = Float.parseFloat(MPPTmaiorVPV);
-                    Float Coef_MPPT_float = Float.parseFloat(Coef_MPPTPV);
-                    Float Imaxstring_float = Float.parseFloat(ImaxstringPV);
-                    Intent intent = new Intent(Main2Activity_dados_inversor.this, Main3Activityinversor.class);
-
-                    intent.putExtra("modeloInvPV", modeloInversoPV);
-                    intent.putExtra("potnomInvPV",potnomInv_float);
-                    intent.putExtra("numMPPTTrackers",numMPPTTrackers_float);
-                    intent.putExtra("MpptMenorIv",MPPTMenor_float);
-                    intent.putExtra("MpptMaiorInv",MPPTMaior_float);
-                    intent.putExtra("CoefMPPT",Coef_MPPT_float);
-                    intent.putExtra("ImaxstringPV", Imaxstring_float);
-
-                    startActivity(intent);
+                    boolean isOk = Database.inversorDao.save(new Inversor(modelInversePV, potnomInvPV, numMPPTTrackersPV, MPPTmaiorVPV, MPPTmenorVPV, Coef_MPPTPV, ImaxstringPV,
+                            rendimentoInvPV, PontenciaMaxEntradaPV, TensaoMaximaCASaidaPV, TensaoFaseNeutroPV));
+                    if (isOk){
+                        Toast.makeText(this, "Cadastro com sucesso!", Toast.LENGTH_LONG).show();
+                        Intent intent = new Intent(this, MainActivity.class);
+                        startActivity(intent);
+                    }else {
+                        Toast.makeText(this,"Falha ao cadastrar o inversoraqui!",Toast.LENGTH_LONG).show();
+                    }
                 }
 
-            }
-        });
 
-    }
+            }catch (Exception e){
+                e.printStackTrace();
+                Toast.makeText(this,"Falha ao cadastrar inversor!",Toast.LENGTH_LONG).show();
+            }finally {
+                db.close();
+            }
+        }
+
+
+
+
+
+    private  void findViews(){
+
+        et_modeloInversor = (EditText) findViewById(R.id.idModInver);
+        et_potnomInv = (EditText) findViewById(R.id.id_pot_nominal);
+        et_numMPPTTrackers = (EditText) findViewById(R.id.idnumTracMPPT);
+        et_MPPTmenorV = (EditText) findViewById(R.id.idmenor_mppt);
+        et_MPPTmaiorV = (EditText) findViewById(R.id.idmaiorVMPPT);
+        et_Coef_MPPT = (EditText) findViewById(R.id.id_coefi_MPPT);
+        et_Imaxstring = (EditText) findViewById(R.id.IdcorrenteMaxStr);
+        et_efic_rend_inv = (EditText) findViewById(R.id.edit_rend_inv);
+        et_PotenciaMaxEntrada_inv = (EditText) findViewById(R.id.ed_PotenciaMaxEntraInv);
+        et_TensaoMaximaCASaida = (EditText) findViewById(R.id.editTensaoMax_SaidaInv);
+        et_TensaoFaseNeutro = (EditText) findViewById(R.id.edTensaoFaseNeutro);
+        }
 }
