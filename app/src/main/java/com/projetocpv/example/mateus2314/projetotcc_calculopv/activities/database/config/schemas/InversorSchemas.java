@@ -19,7 +19,7 @@ public class InversorSchemas {
     public static final String TABLE_NAME = "inversores";
     public static final String CREATE_TABLE = "CREATE TABLE IF NOT EXISTS "
             + TABLE_NAME + " ("
-            + COLUMN_ID + " INTERGER PRIMARY KEY AUTOINCREMENT, "
+            + COLUMN_ID + " INTERGER PRIMARY KEY , "
             + COLUMN_Modelo_Inv + " TEXT, "
             + COLUMN_Potencia_Nom + " TEXT, "
             + COLUMN_TensaoVmppMax + " TEXT, "
