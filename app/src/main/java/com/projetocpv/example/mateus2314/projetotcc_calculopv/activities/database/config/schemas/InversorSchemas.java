@@ -16,9 +16,9 @@ public class InversorSchemas {
     public static final String COLUMN_String_entrada = "String_Entrada";
     public static final String COLUMN_Tensao_Max_Saida_AC = "Tensao_Max_Saida_AC";
     public static final String COLUMN_Tensao_Fase_Neutro = "Tensao_Fase_Neutro";
-    public static final String TABLE_NAME = "inversores";
+    public static final String TABLE_INVERSOR = "inversores";
     public static final String CREATE_TABLE = "CREATE TABLE IF NOT EXISTS "
-            + TABLE_NAME + " ("
+            + TABLE_INVERSOR + " ("
             + COLUMN_ID + " INTERGER PRIMARY KEY , "
             + COLUMN_Modelo_Inv + " TEXT, "
             + COLUMN_Potencia_Nom + " TEXT, "

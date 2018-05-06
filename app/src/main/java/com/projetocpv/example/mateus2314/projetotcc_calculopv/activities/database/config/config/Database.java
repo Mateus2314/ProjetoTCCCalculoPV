@@ -61,7 +61,7 @@ public class Database {
         @Override
         public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
             db.execSQL("DROP TABLE IF EXISTS " + UsuarioSchema.TABLE_NAME);
-            db.execSQL("DROP TABLE IF EXISTS " + InversorSchemas.TABLE_NAME);
+            db.execSQL("DROP TABLE IF EXISTS " + InversorSchemas.TABLE_INVERSOR);
             onCreate(db);
         }
     }

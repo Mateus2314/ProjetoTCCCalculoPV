@@ -8,381 +8,393 @@
     android:fillViewport="true"
     android:theme="@style/Base.Theme.AppCompat">
 
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
 
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="16dp"
-        android:layout_gravity="center"
-        android:orientation="vertical"
-        android:background="@android:color/background_light"
-        android:theme="@style/Base.Theme.AppCompat"
-        >
-
-
-        <TextView
-            android:id="@+id/textView5"
-            android:layout_width="371dp"
-            android:layout_height="wrap_content"
-            android:text="@string/titulo_txt_inv"
-            android:textAlignment="center"
-            android:textColor="@android:color/black"
-            android:textSize="24sp"
-            app:layout_constraintBottom_toTopOf="@+id/guideline19"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0" />
-
-        <android.support.design.widget.TextInputLayout
-            android:id="@+id/TinputLayModeloInver"
+        <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
-            android:layout_marginTop="16dp"
-            android:hint="@string/Md_txt_inv"
+            android:layout_height="wrap_content">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:background="@android:color/background_light"
             android:orientation="vertical"
-            android:textColorHint="@android:color/black"
-            app:layout_constraintBottom_toTopOf="@+id/TinputLayPotNominal"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView5">
-
-            <EditText
-                android:id="@+id/et_modelo_inversor"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_alignBaseline="@+id/textView6"
-                android:layout_alignBottom="@+id/textView6"
-                android:layout_alignParentEnd="true"
-                android:layout_toEndOf="@+id/textView6"
-                android:layout_weight="1"
-                android:contentDescription="@string/modelo_do_inversor"
-                android:ems="10"
-                android:inputType="textPersonName"
-                android:labelFor="@+id/idModInver"
-                android:textAlignment="center"
-                android:textColor="@android:color/holo_green_dark"
-                tools:layout_editor_absoluteX="16dp"
-                tools:layout_editor_absoluteY="74dp" />
-
-        </android.support.design.widget.TextInputLayout>
-
-        <android.support.design.widget.TextInputLayout
-            android:id="@+id/TinputLayPotNominal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/pot_txt_nom"
-            android:orientation="horizontal"
-            android:textColorHint="@android:color/black"
-            app:layout_constraintBottom_toTopOf="@+id/guideline20"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/guideline21"
-            tools:ignore="MissingConstraints">
-
-            <EditText
-                android:id="@+id/id_pot_nominal"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_alignBaseline="@+id/textView7"
-                android:layout_alignBottom="@+id/textView7"
-                android:layout_toEndOf="@+id/textView7"
-                android:layout_weight="1"
-                android:ems="10"
-                android:inputType="numberDecimal"
-                android:labelFor="@+id/id_pot_nominal"
-                android:textAlignment="center"
-                android:textColor="@android:color/holo_green_dark"
-                tools:layout_editor_absoluteX="8dp"
-                tools:layout_editor_absoluteY="91dp" />
-
-        </android.support.design.widget.TextInputLayout>
-
-        <android.support.design.widget.TextInputLayout
-            android:id="@+id/TinputLayMaiorMPPT"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/maior_mppt_txt"
-            android:orientation="horizontal"
-            android:textColorHint="@android:color/black"
-            app:layout_constraintBottom_toTopOf="@+id/guideline24"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/guideline23">
-
-            <EditText
-                android:id="@+id/et_maiorMPPT"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_alignBaseline="@+id/textView10"
-                android:layout_alignBottom="@+id/textView10"
-                android:layout_toEndOf="@+id/textView10"
-                android:layout_weight="1"
-                android:ems="10"
-                android:hint="@string/_300_v"
-                android:inputType="textPersonName|numberDecimal"
-                android:labelFor="@+id/idmaiorVMPPT"
-                android:textAlignment="center"
-                android:textColor="@android:color/holo_green_dark"
-                tools:layout_editor_absoluteX="32dp"
-                tools:layout_editor_absoluteY="257dp" />
-
-        </android.support.design.widget.TextInputLayout>
-
-        <android.support.design.widget.TextInputLayout
-            android:id="@+id/TinputLayMPPTmenor"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/txt_menor_mppt"
-            android:orientation="horizontal"
-            android:textColorHint="@android:color/black"
-            app:layout_constraintBottom_toTopOf="@+id/guideline23"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/guideline22">
-
-            <EditText
-                android:id="@+id/idmenor_mppt"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_alignTop="@+id/textView9"
-                android:layout_toEndOf="@+id/textView9"
-                android:layout_weight="1"
-                android:ems="10"
-                android:inputType="textPersonName|numberDecimal"
-                android:labelFor="@+id/idmenor_mppt"
-                android:textAlignment="center"
-                android:textColor="@android:color/holo_green_dark"
-                tools:layout_editor_absoluteX="0dp"
-                tools:layout_editor_absoluteY="143dp" />
-
-        </android.support.design.widget.TextInputLayout>
-
-        <android.support.design.widget.TextInputLayout
-            android:id="@+id/TinputLayCoefiMPPT"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:hint="@string/Coe_txt_MPPT"
-            android:orientation="horizontal"
-            android:textColorHint="@android:color/black"
-            app:layout_constraintBottom_toTopOf="@+id/guideline25"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/TinputLayMaiorMPPT">
-
-            <EditText
-                android:id="@+id/id_coefi_MPPT"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_alignBaseline="@+id/textView11"
-                android:layout_alignBottom="@+id/textView11"
-                android:layout_toEndOf="@+id/textView11"
-                android:layout_weight="1"
-                android:ems="10"
-                android:inputType="number"
-                android:labelFor="@+id/id_coefi_MPPT"
-                android:textAlignment="center"
-                android:textColor="@android:color/holo_green_dark"
-                tools:layout_editor_absoluteX="0dp"
-                tools:layout_editor_absoluteY="309dp" />
-
-        </android.support.design.widget.TextInputLayout>
-
-        <android.support.design.widget.TextInputLayout
-            android:id="@+id/TinputLayCorrenteMax"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
-            android:layout_marginTop="8dp"
-            android:hint="@string/corre_txt_max_string"
-            android:orientation="horizontal"
-            android:textColorHint="@android:color/black"
-            app:layout_constraintBottom_toTopOf="@+id/idvoltar_main_inv"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/guideline25">
-
-            <EditText
-                android:id="@+id/IdcorrenteMaxStr"
-                android:layout_width="370dp"
-                android:layout_height="wrap_content"
-                android:layout_alignBaseline="@+id/textView15"
-                android:layout_alignBottom="@+id/textView15"
-                android:layout_toEndOf="@+id/textView15"
-                android:layout_weight="1"
-                android:ems="10"
-                android:inputType="numberDecimal"
-                android:labelFor="@+id/IdcorrenteMaxStr"
-                android:textAlignment="center"
-                android:textColor="@android:color/holo_green_dark"
-                tools:layout_editor_absoluteX="8dp"
-                tools:layout_editor_absoluteY="399dp" />
-
-        </android.support.design.widget.TextInputLayout>
-
-        <android.support.design.widget.TextInputLayout
-            android:id="@+id/TextInputLayrend_Inv"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:hint="@string/efi_inv"
-            android:textColorHint="@android:color/black">
-
-            <EditText
-                android:id="@+id/edit_rend_inv"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:background="@android:color/background_light"
-                android:ems="10"
-                android:inputType="numberDecimal"
-                android:selectAllOnFocus="false"
-                android:singleLine="false"
-                android:textAlignment="center"
-                android:textColor="@android:color/holo_green_dark"
-                android:textSize="18sp"
-                app:layout_constraintBaseline_toBaselineOf="@+id/titulo_rend_inv_2"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toEndOf="@+id/titulo_rend_inv_2" />
-
-        </android.support.design.widget.TextInputLayout>
-
-        <android.support.design.widget.TextInputLayout
-            android:id="@+id/TinputLayNumTracMPPT"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/num_txt_mppt_trac"
-            android:orientation="horizontal"
-            android:textColorHint="@android:color/black"
-            app:layout_constraintBottom_toTopOf="@+id/guideline22"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/guideline20"
-            app:layout_constraintVertical_bias="0.0">
-
-            <EditText
-                android:id="@+id/idnumTracMPPT"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_alignBaseline="@+id/textView8"
-                android:layout_alignBottom="@+id/textView8"
-                android:layout_toEndOf="@+id/textView8"
-                android:layout_weight="1"
-                android:ems="10"
-                android:inputType="number"
-                android:labelFor="@+id/idnumTracMPPT"
-                android:textAlignment="center"
-                android:textColor="@android:color/holo_green_dark"
-                tools:layout_editor_absoluteX="0dp"
-                tools:layout_editor_absoluteY="159dp" />
-
-        </android.support.design.widget.TextInputLayout>
-
-        <android.support.design.widget.TextInputLayout
-            android:id="@+id/TextInputLayoutPotMaxEntrada"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/pot_ncia_maxima_de_entrada"
-            android:textColorHint="@android:color/black">
-
-            <EditText
-                android:id="@+id/ed_PotenciaMaxEntraInv"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:ems="10"
-                android:inputType="textPersonName"
-                android:textColor="@android:color/holo_green_dark" />
-        </android.support.design.widget.TextInputLayout>
-
-        <android.support.design.widget.TextInputLayout
-            android:id="@+id/TextInputLayTensao_Saida"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:hint="@string/tensao_Saida_texto"
-            android:textColorHint="@android:color/black">
-
-            <EditText
-                android:id="@+id/editTensaoMax_SaidaInv"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:background="@android:color/background_light"
-                android:ems="10"
-                android:inputType="numberDecimal"
-                android:selectAllOnFocus="false"
-                android:singleLine="false"
-                android:textAlignment="center"
-                android:textColor="@android:color/holo_green_dark"
-                android:textSize="18sp"
-                app:layout_constraintBaseline_toBaselineOf="@+id/tex_tens_said"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toEndOf="@+id/tex_tens_said" />
-
-        </android.support.design.widget.TextInputLayout>
-
-        <android.support.design.widget.TextInputLayout
-            android:id="@+id/TextInputLayTensaoFaseNeutro"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/tens_o_fase_neutro"
-            android:textColorHint="@android:color/black">
-
-            <EditText
-                android:id="@+id/edTensaoFaseNeutro"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:ems="10"
-                android:inputType="textPersonName"
-                android:textColor="@android:color/holo_green_dark" />
-
-        </android.support.design.widget.TextInputLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <Button
-                android:id="@+id/bt_salvarinversor"
-                style="@style/Widget.AppCompat.Button"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="8dp"
-                android:layout_marginStart="8dp"
-                android:layout_marginTop="8dp"
-                android:layout_weight="1"
-                android:onClick="salvarInversores"
-                android:contentDescription="@string/bt_inversor"
-                android:text="@string/salvar_dados"
-                app:layout_constraintBottom_toTopOf="@+id/guideline17"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="@+id/guideline18"
-                app:layout_constraintTop_toTopOf="@+id/guideline17"
-                tools:ignore="UnknownId" />
-        </LinearLayout>
-
-        <ImageView
-            android:id="@+id/imageView2"
-            android:layout_width="wrap_content"
-            android:layout_height="38dp"
-            android:contentDescription="@string/todo"
-            android:scaleType="centerCrop"
+            android:theme="@style/Base.Theme.AppCompat"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/guideline17"
-            app:layout_constraintVertical_bias="0.0"
-            app:srcCompat="@drawable/inversor" />
+            app:layout_constraintTop_toTopOf="parent">
 
-    </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="371dp"
+                android:layout_height="wrap_content"
+                android:text="@string/titulo_txt_inv"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toTopOf="@+id/guideline19"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/TinputLayModeloInver"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="16dp"
+                android:hint="@string/Md_txt_inv"
+                android:orientation="vertical"
+                android:textColorHint="@android:color/black"
+                app:layout_constraintBottom_toTopOf="@+id/TinputLayPotNominal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView5">
+
+                <EditText
+                    android:id="@+id/et_modelo_inversor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/textView6"
+                    android:layout_alignBottom="@+id/textView6"
+                    android:layout_alignParentEnd="true"
+                    android:layout_toEndOf="@+id/textView6"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/modelo_do_inversor"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:labelFor="@+id/idModInver"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/holo_green_dark"
+                    tools:layout_editor_absoluteX="16dp"
+                    tools:layout_editor_absoluteY="74dp" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/TinputLayPotNominal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/pot_txt_nom"
+                android:orientation="horizontal"
+                android:textColorHint="@android:color/black"
+                app:layout_constraintBottom_toTopOf="@+id/guideline20"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/guideline21"
+                tools:ignore="MissingConstraints">
+
+                <EditText
+                    android:id="@+id/id_pot_nominal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/textView7"
+                    android:layout_alignBottom="@+id/textView7"
+                    android:layout_toEndOf="@+id/textView7"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="numberDecimal"
+                    android:labelFor="@+id/id_pot_nominal"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/holo_green_dark"
+                    tools:layout_editor_absoluteX="8dp"
+                    tools:layout_editor_absoluteY="91dp" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/TinputLayMaiorMPPT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/maior_mppt_txt"
+                android:orientation="horizontal"
+                android:textColorHint="@android:color/black"
+                app:layout_constraintBottom_toTopOf="@+id/guideline24"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/guideline23">
+
+                <EditText
+                    android:id="@+id/et_maiorMPPT"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/textView10"
+                    android:layout_alignBottom="@+id/textView10"
+                    android:layout_toEndOf="@+id/textView10"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="@string/_300_v"
+                    android:inputType="textPersonName|numberDecimal"
+                    android:labelFor="@+id/idmaiorVMPPT"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/holo_green_dark"
+                    tools:layout_editor_absoluteX="32dp"
+                    tools:layout_editor_absoluteY="257dp" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/TinputLayMPPTmenor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/txt_menor_mppt"
+                android:orientation="horizontal"
+                android:textColorHint="@android:color/black"
+                app:layout_constraintBottom_toTopOf="@+id/guideline23"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/guideline22">
+
+                <EditText
+                    android:id="@+id/idmenor_mppt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/textView9"
+                    android:layout_toEndOf="@+id/textView9"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="textPersonName|numberDecimal"
+                    android:labelFor="@+id/idmenor_mppt"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/holo_green_dark"
+                    tools:layout_editor_absoluteX="0dp"
+                    tools:layout_editor_absoluteY="143dp" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/TinputLayCoefiMPPT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:hint="@string/Coe_txt_MPPT"
+                android:orientation="horizontal"
+                android:textColorHint="@android:color/black"
+                app:layout_constraintBottom_toTopOf="@+id/guideline25"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/TinputLayMaiorMPPT">
+
+                <EditText
+                    android:id="@+id/id_coefi_MPPT"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/textView11"
+                    android:layout_alignBottom="@+id/textView11"
+                    android:layout_toEndOf="@+id/textView11"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:labelFor="@+id/id_coefi_MPPT"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/holo_green_dark"
+                    tools:layout_editor_absoluteX="0dp"
+                    tools:layout_editor_absoluteY="309dp" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/TinputLayCorrenteMax"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:hint="@string/corre_txt_max_string"
+                android:orientation="horizontal"
+                android:textColorHint="@android:color/black"
+                app:layout_constraintBottom_toTopOf="@+id/idvoltar_main_inv"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/guideline25">
+
+                <EditText
+                    android:id="@+id/IdcorrenteMaxStr"
+                    android:layout_width="370dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/textView15"
+                    android:layout_alignBottom="@+id/textView15"
+                    android:layout_toEndOf="@+id/textView15"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="numberDecimal"
+                    android:labelFor="@+id/IdcorrenteMaxStr"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/holo_green_dark"
+                    tools:layout_editor_absoluteX="8dp"
+                    tools:layout_editor_absoluteY="399dp" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/TextInputLayrend_Inv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/efi_inv"
+                android:textColorHint="@android:color/black">
+
+                <EditText
+                    android:id="@+id/edit_rend_inv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@android:color/background_light"
+                    android:ems="10"
+                    android:inputType="numberDecimal"
+                    android:selectAllOnFocus="false"
+                    android:singleLine="false"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/holo_green_dark"
+                    android:textSize="18sp"
+                    app:layout_constraintBaseline_toBaselineOf="@+id/titulo_rend_inv_2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/titulo_rend_inv_2" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/TinputLayNumTracMPPT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/num_txt_mppt_trac"
+                android:orientation="horizontal"
+                android:textColorHint="@android:color/black"
+                app:layout_constraintBottom_toTopOf="@+id/guideline22"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/guideline20"
+                app:layout_constraintVertical_bias="0.0">
+
+                <EditText
+                    android:id="@+id/idnumTracMPPT"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/textView8"
+                    android:layout_alignBottom="@+id/textView8"
+                    android:layout_toEndOf="@+id/textView8"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:labelFor="@+id/idnumTracMPPT"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/holo_green_dark"
+                    tools:layout_editor_absoluteX="0dp"
+                    tools:layout_editor_absoluteY="159dp" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/TextInputLayoutPotMaxEntrada"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/pot_ncia_maxima_de_entrada"
+                android:textColorHint="@android:color/black">
+
+                <EditText
+                    android:id="@+id/ed_PotenciaMaxEntraInv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:textColor="@android:color/holo_green_dark" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/TextInputLayTensao_Saida"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/tensao_Saida_texto"
+                android:textColorHint="@android:color/black">
+
+                <EditText
+                    android:id="@+id/editTensaoMax_SaidaInv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@android:color/background_light"
+                    android:ems="10"
+                    android:inputType="numberDecimal"
+                    android:selectAllOnFocus="false"
+                    android:singleLine="false"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/holo_green_dark"
+                    android:textSize="18sp"
+                    app:layout_constraintBaseline_toBaselineOf="@+id/tex_tens_said"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/tex_tens_said" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/TextInputLayTensaoFaseNeutro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/tens_o_fase_neutro"
+                android:textColorHint="@android:color/black">
+
+                <EditText
+                    android:id="@+id/edTensaoFaseNeutro"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:textColor="@android:color/holo_green_dark" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/bt_salvarinversor"
+                    style="@style/Widget.AppCompat.Button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/bt_inversor"
+                    android:onClick="salvarInversores"
+                    android:text="@string/salvar_dados"
+                    app:layout_constraintBottom_toTopOf="@+id/guideline17"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/guideline18"
+                    app:layout_constraintTop_toTopOf="@+id/guideline17"
+                    tools:ignore="UnknownId" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:contentDescription="@string/todo"
+                android:scaleType="centerCrop"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/guideline17"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@drawable/inversor" />
+
+        </LinearLayout>
+        </ScrollView>
+    </android.support.constraint.ConstraintLayout>
 </ScrollView>

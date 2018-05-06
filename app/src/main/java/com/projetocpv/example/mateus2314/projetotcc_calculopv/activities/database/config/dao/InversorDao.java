@@ -39,7 +39,7 @@ public class InversorDao implements IInversorDao {
             contentValues.put(InversorSchemas.COLUMN_String_entrada, inversor.getString_entrada());
             contentValues.put(InversorSchemas.COLUMN_Tensao_Max_Saida_AC, inversor.getTensao_max_AC_saida());
             contentValues.put(InversorSchemas.COLUMN_Tensao_Fase_Neutro, inversor.getTensao_Fase_Neutro());
-            return  this.db.insert(InversorSchemas.TABLE_NAME,null, contentValues) > 0;
+            return  this.db.insert(InversorSchemas.TABLE_INVERSOR,null, contentValues) > 0;
             }catch (SQLException e){
             e.printStackTrace();
             return false;
