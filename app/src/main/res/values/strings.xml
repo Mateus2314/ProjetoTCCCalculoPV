@@ -78,6 +78,7 @@
     <string name="tens_o_fase_neutro">Tensão Fase Neutro :</string>
     <string name="cadastrar_modulo">Cadastrar Modulo</string>
     <string name="loading_please_wait">Loading, Please Wait..</string>
+    <string name="loading_please_wait2">Loading, Please Wait..</string>
     <string-array name="modulosSolares">
         <item>225 wp</item>
         <item>275 wp</item>

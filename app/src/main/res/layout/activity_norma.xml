@@ -7,6 +7,34 @@
     tools:context=".activities.activities.NormaActivity">
 
 
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_vertical|center_horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/guideline3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LoadingText" />
+
+    <TextView
+        android:id="@+id/LoadingText"
+        android:layout_width="197dp"
+        android:layout_height="27dp"
+        android:layout_below="@+id/progressBar1"
+        android:gravity="center_horizontal"
+        android:text="@string/loading_please_wait2"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </TextView>
+
+
+
 
 
     <WebView
