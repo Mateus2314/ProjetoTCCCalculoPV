@@ -22,11 +22,21 @@ public class MainActivity extends AppCompatActivity {
     private EditText et_nome;
     private EditText et_contaener;
     private EditText et_email;
+    private Button btNorma;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        btNorma = (Button)findViewById(R.id.btnorma);
+
+        btNorma.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this,NormaActivity.class));
+            }
+        });
 
         findViews();
 
