@@ -1,383 +1,293 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".activities.activities.Main4ActivityModulo"
-    android:fillViewport="true">
+    android:fillViewport="true"
+    tools:context=".activities.activities.Main4ActivityModulo">
 
     <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@android:color/holo_blue_dark"
         android:theme="@style/Base.Theme.AppCompat"
         app:layout_constraintBottom_toTopOf="@+id/EditAreadoModuloSolar"
         app:layout_constraintTop_toTopOf="@+id/EditAreadoModuloSolar">
 
-        <Button
-            android:id="@+id/idbuttonSeguirAct5"
-            android:layout_width="88dp"
-            android:layout_height="48dp"
-            android:layout_marginBottom="8dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:contentDescription="@string/voltar_txt_act1"
-            android:text="@string/seguir_txt_2"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="@+id/guideline8"
-            app:layout_constraintTop_toTopOf="@+id/guideline7" />
-
-        <Button
-            android:id="@+id/idbuttonVoltaact3inv"
-            android:layout_width="88dp"
-            android:layout_height="50dp"
-            android:layout_marginBottom="8dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:contentDescription="@string/voltar_txt_act1"
-            android:text="@string/voltar_txt_act1"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/guideline8"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/guideline7" />
-
-        <TextView
-            android:id="@+id/TxtModeloModuloSolar"
-            android:layout_width="212dp"
+        <ScrollView
+            android:id="@+id/scrollView2"
+            android:layout_width="0dp"
             android:layout_height="0dp"
-            android:layout_marginBottom="16dp"
-            android:layout_marginTop="16dp"
-            android:contentDescription="@string/efi_inv"
-            android:layerType="software"
-            android:scrollbars="none"
-            android:text="@string/textmodulosolartxt"
-            android:textAlignment="viewStart"
-            android:textAllCaps="false"
-            android:textColor="@android:color/black"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            android:visibility="visible"
-            app:layout_constraintBottom_toTopOf="@+id/edittxPotenciaNominalmodulo"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/guideline5" />
-
-        <TextView
-            android:id="@+id/txtPotencianominalModulo"
-            android:layout_width="159dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="24dp"
-            android:contentDescription="@string/txtpotenciaNominalwpModulosolar"
-            android:layerType="software"
-            android:scrollbars="none"
-            android:text="@string/txtpotenciaNominalwpModulosolar"
-            android:textAlignment="viewStart"
-            android:textAllCaps="false"
-            android:textColor="@android:color/black"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            android:visibility="visible"
-            app:layout_constraintBottom_toBottomOf="@+id/edittxPotenciaNominalmodulo"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/TxtModeloModuloSolar" />
-
-        <TextView
-            android:id="@+id/txtAreadoModuloSolar"
-            android:layout_width="0dp"
-            android:layout_height="31dp"
-            android:layout_marginBottom="8dp"
-            android:layout_marginTop="16dp"
-            android:contentDescription="@string/txtpotenciaNominalwpModulosolar"
-            android:layerType="software"
-            android:scrollbars="none"
-            android:text="@string/txtAreadoModuloSolar"
-            android:textAlignment="viewStart"
-            android:textAllCaps="false"
-            android:textColor="@android:color/black"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            android:visibility="visible"
-            app:layout_constraintBottom_toTopOf="@+id/TextoRendimentoModuloSolar"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/txtPotencianominalModulo" />
-
-        <TextView
-            android:id="@+id/TextoRendimentoModuloSolar"
-            android:layout_width="0dp"
-            android:layout_height="27dp"
-            android:contentDescription="@string/txtpotenciaNominalwpModulosolar"
-            android:layerType="software"
-            android:scrollbars="none"
-            android:text="@string/TxtRendimentodoModuloSolar"
-            android:textAlignment="viewStart"
-            android:textAllCaps="false"
-            android:textColor="@android:color/black"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            android:visibility="visible"
-            app:layout_constraintBaseline_toBaselineOf="@+id/editRendimentoModuloSolar"
-            app:layout_constraintStart_toStartOf="parent" />
-
-        <TextView
-            android:id="@+id/textTensaoMediaDC"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="32dp"
-            android:contentDescription="@string/txtpotenciaNominalwpModulosolar"
-            android:layerType="software"
-            android:scrollbars="none"
-            android:text="@string/textTensaoMedia"
-            android:textAlignment="viewStart"
-            android:textAllCaps="false"
-            android:textColor="@android:color/black"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            android:visibility="visible"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textTensaoOc" />
-
-        <TextView
-            android:id="@+id/textpesomodulosolar"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="32dp"
-            android:contentDescription="@string/txtpotenciaNominalwpModulosolar"
-            android:layerType="software"
-            android:scrollbars="none"
-            android:text="@string/txtpesoModuloSolar"
-            android:textAlignment="viewStart"
-            android:textAllCaps="false"
-            android:textColor="@android:color/black"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            android:visibility="visible"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textCorrente_m_modulo" />
-
-        <TextView
-            android:id="@+id/textCorrente_m_modulo"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="32dp"
-            android:contentDescription="@string/txtpotenciaNominalwpModulosolar"
-            android:layerType="software"
-            android:scrollbars="none"
-            android:text="@string/text_corrente_m_modulo_solar"
-            android:textAlignment="viewStart"
-            android:textAllCaps="false"
-            android:textColor="@android:color/black"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            android:visibility="visible"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textTensaoMediaDC" />
-
-        <TextView
-            android:id="@+id/textPrecodomodulosolar"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="32dp"
-            android:contentDescription="@string/txtpotenciaNominalwpModulosolar"
-            android:layerType="software"
-            android:scrollbars="none"
-            android:text="@string/text_preco_inv"
-            android:textAlignment="viewStart"
-            android:textAllCaps="false"
-            android:textColor="@android:color/black"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            android:visibility="visible"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textpesomodulosolar" />
-
-        <TextView
-            android:id="@+id/textTensaoOc"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="24dp"
-            android:contentDescription="@string/txtpotenciaNominalwpModulosolar"
-            android:layerType="software"
-            android:scrollbars="none"
-            android:text="@string/textoTensaoOcmodulo"
-            android:textAlignment="viewStart"
-            android:textAllCaps="false"
-            android:textColor="@android:color/black"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            android:visibility="visible"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/TextoRendimentoModuloSolar" />
-
-        <TextView
-            android:id="@+id/txTituloModuloAct"
-            android:layout_width="0dp"
-            android:layout_height="58dp"
-            android:layout_marginBottom="8dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:contentDescription="@string/Inf_titulo_modulo"
-            android:text="@string/Inf_titulo_modulo"
-            android:textAlignment="center"
-            android:textColor="@android:color/background_light"
-            android:textSize="24sp"
-            app:layout_constraintBottom_toTopOf="@+id/guideline5"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <android.support.constraint.Guideline
-            android:id="@+id/guideline5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            app:layout_constraintGuide_percent="0.06" />
-
-        <EditText
-            android:id="@+id/edittxPotenciaNominalmodulo"
-            android:layout_width="0dp"
-            android:layout_height="47dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginStart="8dp"
-            android:ems="10"
-            android:hint="@string/_320_wp"
-            android:inputType="textPersonName"
-            android:textAlignment="center"
-            android:textColor="@android:color/holo_green_dark"
-            app:layout_constraintBaseline_toBaselineOf="@+id/txtPotencianominalModulo"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toEndOf="@+id/txtPotencianominalModulo" />
-
-        <EditText
-            android:id="@+id/EditAreadoModuloSolar"
-            android:layout_width="0dp"
-            android:layout_height="42dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginStart="8dp"
-            android:ems="10"
-            android:hint="@string/_1_m"
-            android:inputType="textPersonName"
-            android:textAlignment="center"
-            android:textColor="@android:color/holo_green_dark"
-            app:layout_constraintBaseline_toBaselineOf="@+id/txtAreadoModuloSolar"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/txtAreadoModuloSolar" />
-
-        <EditText
-            android:id="@+id/editRendimentoModuloSolar"
-            android:layout_width="0dp"
-            android:layout_height="41dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginTop="16dp"
-            android:ems="10"
-            android:hint="@string/_19"
-            android:inputType="textPersonName"
-            android:textAlignment="center"
-            android:textColor="@android:color/holo_green_dark"
+            app:layout_constraintBottom_toTopOf="@+id/btcadastrarModulo"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toEndOf="@+id/TextoRendimentoModuloSolar"
-            app:layout_constraintTop_toBottomOf="@+id/EditAreadoModuloSolar" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
 
-        <EditText
-            android:id="@+id/editTensaoOc"
-            android:layout_width="0dp"
-            android:layout_height="41dp"
-            android:ems="10"
-            android:hint="@string/_30V"
-            android:inputType="textPersonName"
-            android:textAlignment="center"
-            android:textColor="@android:color/holo_green_dark"
-            app:layout_constraintBaseline_toBaselineOf="@+id/textTensaoOc"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/textTensaoOc" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
 
-        <EditText
-            android:id="@+id/editTensaoMediaDC"
-            android:layout_width="0dp"
-            android:layout_height="41dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginStart="8dp"
-            android:ems="10"
-            android:hint="@string/_30V"
-            android:inputType="textPersonName"
-            android:textAlignment="center"
-            android:textColor="@android:color/holo_green_dark"
-            app:layout_constraintBaseline_toBaselineOf="@+id/textTensaoMediaDC"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/textTensaoMediaDC" />
+                <TextView
+                    android:id="@+id/txTituloModuloAct"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:contentDescription="@string/Inf_titulo_modulo"
+                    android:text="@string/Inf_titulo_modulo"
+                    android:textAlignment="center"
+                    android:textColor="#020202"
+                    android:textSize="24sp"
+                    app:layout_constraintBottom_toTopOf="@+id/guideline5"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
-        <EditText
-            android:id="@+id/editCorrentmed"
-            android:layout_width="0dp"
-            android:layout_height="41dp"
-            android:ems="10"
-            android:hint="@string/_9a"
-            android:inputType="textPersonName"
-            android:textAlignment="center"
-            android:textColor="@android:color/holo_green_dark"
-            app:layout_constraintBaseline_toBaselineOf="@+id/textCorrente_m_modulo"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/textCorrente_m_modulo" />
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/TextInputLayoutModeloModuloSolar"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:hint="@string/textmodulosolartxt"
+                    android:orientation="horizontal"
+                    android:textColorHint="@android:color/background_dark">
 
-        <EditText
-            android:id="@+id/editPeso_Modulo_Solar"
-            android:layout_width="0dp"
-            android:layout_height="41dp"
-            android:ems="10"
-            android:hint="@string/_20_kg"
-            android:inputType="textPersonName"
-            android:textAlignment="center"
-            android:textColor="@android:color/holo_green_dark"
-            app:layout_constraintBaseline_toBaselineOf="@+id/textpesomodulosolar"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/textpesomodulosolar" />
+                    <EditText
+                        android:id="@+id/editModeloModuloSolar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/holo_green_dark"
+                        app:layout_constraintBaseline_toBaselineOf="@+id/TxtModeloModuloSolar"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/TxtModeloModuloSolar" />
 
-        <EditText
-            android:id="@+id/editPrecoPlacaSolar"
-            android:layout_width="0dp"
-            android:layout_height="41dp"
-            android:ems="10"
-            android:hint="@string/r_2000_00"
-            android:inputType="textPersonName"
-            android:textAlignment="center"
-            android:textColor="@android:color/holo_green_dark"
-            app:layout_constraintBaseline_toBaselineOf="@+id/textPrecodomodulosolar"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/textPrecodomodulosolar" />
+                </android.support.design.widget.TextInputLayout>
 
-        <EditText
-            android:id="@+id/editModeloModuloSolar"
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/TextInputLayPotenciaNominalModulo"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:hint="@string/txtpotenciaNominalwpModulosolar"
+                    android:orientation="horizontal"
+                    android:textColorHint="@android:color/background_dark">
+
+                    <EditText
+                        android:id="@+id/edittxPotenciaNominalmodulo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/holo_green_dark"
+                        app:layout_constraintBaseline_toBaselineOf="@+id/txtPotencianominalModulo"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="1.0"
+                        app:layout_constraintStart_toEndOf="@+id/txtPotencianominalModulo" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/TextInputLayAreaModuloSolar"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:hint="@string/txtAreadoModuloSolar"
+                    android:textColorHint="@android:color/background_dark">
+
+                    <EditText
+                        android:id="@+id/EditAreadoModuloSolar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/holo_green_dark"
+                        app:layout_constraintBaseline_toBaselineOf="@+id/txtAreadoModuloSolar"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/txtAreadoModuloSolar" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/TextInputLayRendimento"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:hint="@string/TxtRendimentodoModuloSolar"
+                    android:textColorHint="@android:color/background_dark">
+
+                    <EditText
+                        android:id="@+id/editRendimentoModuloSolar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/holo_green_dark"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toEndOf="@+id/TextoRendimentoModuloSolar"
+                        app:layout_constraintTop_toBottomOf="@+id/EditAreadoModuloSolar" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/TextInputLayTensaoMediaDC"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:baselineAligned="false"
+                    android:hint="@string/textTensaoMedia"
+                    android:textColorHint="@android:color/background_dark">
+
+                    <EditText
+                        android:id="@+id/editTensaoMediaDC"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/holo_green_dark"
+                        app:layout_constraintBaseline_toBaselineOf="@+id/textTensaoMediaDC"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/textTensaoMediaDC" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/TextInputLayTensaoOCmodulosolar"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:baselineAligned="false"
+                    android:hint="@string/textoTensaoOcmodulo"
+                    android:textColorHint="@android:color/background_dark">
+
+                    <EditText
+                        android:id="@+id/editTensaoOc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/holo_green_dark"
+                        app:layout_constraintBaseline_toBaselineOf="@+id/textTensaoOc"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/textTensaoOc" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/TextInputLayPesoModuloSolar"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:baselineAligned="false"
+                    android:hint="@string/txtpesoModuloSolar"
+                    android:textColorHint="@android:color/background_dark">
+
+                    <EditText
+                        android:id="@+id/editPeso_Modulo_Solar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/holo_green_dark"
+                        app:layout_constraintBaseline_toBaselineOf="@+id/textpesomodulosolar"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/textpesomodulosolar" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/TextInputLayPrecoPlanoSolar"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:hint="@string/text_preco_inv"
+                    android:textColorHint="@android:color/background_dark">
+
+                    <EditText
+                        android:id="@+id/editPrecoPlacaSolar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/holo_green_dark"
+                        app:layout_constraintBaseline_toBaselineOf="@+id/textPrecodomodulosolar"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/textPrecodomodulosolar" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/TextInputLayCorrentemedModuloSolar"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:baselineAligned="false"
+                    android:hint="@string/text_corrente_m_modulo_solar"
+                    android:textColorHint="@android:color/background_dark">
+
+                    <EditText
+                        android:id="@+id/editCorrentmed"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/holo_green_dark"
+                        app:layout_constraintBaseline_toBaselineOf="@+id/textCorrente_m_modulo"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/textCorrente_m_modulo" />
+
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+        <ImageView
+            android:id="@+id/imageView4"
             android:layout_width="0dp"
-            android:layout_height="42dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginStart="8dp"
-            android:ems="10"
-            android:hint="@string/yingli340p"
-            android:inputType="textPersonName"
-            android:textAlignment="center"
-            android:textColor="@android:color/holo_green_dark"
-            app:layout_constraintBaseline_toBaselineOf="@+id/TxtModeloModuloSolar"
+            android:layout_height="0dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/TxtModeloModuloSolar" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline"
+            app:srcCompat="@drawable/inversor" />
 
         <android.support.constraint.Guideline
-            android:id="@+id/guideline7"
+            android:id="@+id/guideline"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            app:layout_constraintGuide_begin="1027dp" />
+            app:layout_constraintGuide_percent="0.88" />
 
-        <android.support.constraint.Guideline
-            android:id="@+id/guideline8"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            app:layout_constraintGuide_percent="0.5" />
+        <Button
+            android:id="@+id/btcadastrarModulo"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:text="@string/cadastrar_modulo"
+            app:layout_constraintBottom_toTopOf="@+id/guideline"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline" />
 
     </android.support.constraint.ConstraintLayout>
 

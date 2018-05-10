@@ -39,4 +39,5 @@
     <string name="salvar_dados">Salvar dados</string>
     <string name="pot_ncia_maxima_de_entrada">Potência maxima de entrada :</string>
     <string name="tens_o_fase_neutro">Tensão Fase Neutro :</string>
+    <string name="cadastrar_modulo">Cadastrar Modulo</string>
 </resources>

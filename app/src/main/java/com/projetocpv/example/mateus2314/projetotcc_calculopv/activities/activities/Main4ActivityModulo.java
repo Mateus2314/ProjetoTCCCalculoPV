@@ -20,8 +20,7 @@ public class Main4ActivityModulo extends AppCompatActivity {
     private EditText CorrenteMediaDCModulo;
     private EditText PesoModuloSolar;
     private EditText PrecoModulosSolar;
-    private Button ButtonSeguirAct5;
-    private Button ButtonVoltarAct3;
+    private Button ButtonCadastrarModulo;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,19 +37,13 @@ public class Main4ActivityModulo extends AppCompatActivity {
         PesoModuloSolar = (EditText)findViewById(R.id.editPeso_Modulo_Solar);
         PrecoModulosSolar = (EditText)findViewById(R.id.editPrecoPlacaSolar);
 
-        ButtonSeguirAct5 = (Button)findViewById(R.id.idbuttonSeguirAct5);
-        ButtonVoltarAct3 = (Button)findViewById(R.id.idbuttonVoltaact3inv);
+        ButtonCadastrarModulo = (Button)findViewById(R.id.btcadastrarModulo);
 
-        ButtonVoltarAct3.setOnClickListener(new View.OnClickListener() {
+
+        ButtonCadastrarModulo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(Main4ActivityModulo.this,MainActivity.class));
-            }
-        });
-        ButtonSeguirAct5.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                //Completar aqui as permições para avançar <---------------------------
             }
         });
 
